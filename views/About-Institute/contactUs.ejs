@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="../stylesheets/About Institute/inner.css">
+
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        #main {
+            min-height: 100%;
+            width: 100%;
+            position: relative;
+
+
+        }
+
+        #content {
+            width: 95%;
+            padding: .2rem 5rem;
+            margin-left: 2.5rem;
+
+
+        }
+
+        #section1 {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .container h2{
+            margin-top: 30px;
+            background-color: rebeccapurple;
+            padding: 20px;
+            color: white;
+            text-align: center;
+
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rebeccapurple;
+            color: white;
+        }
+        td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+        .details {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          
+        }
+    
+        .card {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          width: 300px;
+          box-sizing: border-box;
+        }
+    
+        .header {
+          font-size: 24px;
+          color: #333;
+          margin-bottom: 5px;
+        }
+    
+        .sub-header {
+          background-color: #ffd700;
+          color: black;
+          font-size: 18px;
+          text-align: center;
+          padding: 5px 0;
+          margin-bottom: 10px;
+          border-radius: 4px;
+        }
+    
+        .content {
+          font-size: 16px;
+          color: #666;
+          margin-bottom: 10px;
+        }
+    </style>
+   
+</head>
+<body>
+  <%include ../Header/nav.html%>
+
+    
+<div id="main">
+
+    <div id="img">
+        <img src="../images/CollegeImages/DSC_2298.JPG" alt="">
+        <div id="nameDiv">
+            <h2>Contact Us
+            </h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+    <div id="content">
+      <section id="section1">
+    <div class="details">
+      <div class="card">
+        <div class="sub-header">Admission Cell</div>
+        <div class="content">
+          <strong>Contact No:</strong><br />7773005065,7773001624,7773001627
+        </div>
+      </div>
+      </div>
+      <div class="details">
+        <div class="card">
+          <div class="sub-header">TAP Cell</div>
+          <div class="content">
+            <strong>Contact No:</strong><br />	+91-751-2440036
+          </div>
+        </div>
+        </div>
+        <div class="details">
+          <div class="card">
+            <div class="sub-header">Managing Director's Office</div>
+            <div class="content">
+              <strong>Contact No:</strong><br />+91-751-2440061, 9425308940
+            </div>
+          </div>
+          </div>
+      
+          
+    </section>
+    <section id="section1">
+      
+          
+            <div class="details">
+              <div class="card">
+                <div class="sub-header">Registrar Office</div>
+                <div class="content">
+                  <strong>Contact No:</strong><br />+91-751-2440058 <br>
+                  <strong>Email: </strong> <br>registrar@itmgoi.in
+                </div>
+              </div>
+              </div>
+              <div class="details">
+                <div class="card">
+                  <div class="sub-header">Director Office</div>
+                  <div class="content">
+                    <strong>Contact No:</strong><br />+91-751-2440056(TeleFax) <br>
+                  <strong>Email: </strong> <br>directoritmgoi@itmgoi.in
+                  </div>
+                </div>
+                </div>
+                <div class="details">
+                  <div class="card">
+                    <div class="sub-header">Alumni Cell Incharge</div>
+                    <div class="content">
+                      <strong>Contact No:</strong><br />+91-8120529565 <br>
+                      <strong>WhatsApp:</strong><br /> 9009144629 (Mr.Shyam Babu Singh)
+                    </div>
+                  </div>
+                  </div>
+            
+      </section>
+
+    </div>
+   
+
+    
+    
+    <%include ../Footer/footer.html%>
+
+
+</div>
+</body>
+</html>

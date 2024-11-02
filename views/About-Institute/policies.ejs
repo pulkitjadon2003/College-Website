@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies</title>
+    
+    <link rel="stylesheet" href="../stylesheets/About Institute/inner.css">
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 100%;
+            width: 100%;
+        }
+
+        #main {
+            min-height: 100%;
+            width: 100%;
+            position: relative;
+
+
+        }
+
+        
+        .header {
+            color: white;
+            height: 45vh;
+            position: relative;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            font-size: 3vmax;
+            font-weight: 500;
+            z-index: 5;
+        }
+        .header img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(70%);
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 8vh;
+        }
+        .container h2{
+            margin-top: 30px;
+            background-color: rebeccapurple;
+            padding: 20px;
+            color: white;
+            text-align: center;
+
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rebeccapurple;
+            color: white;
+        }
+        td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+    </style>
+ 
+</head>
+<body>
+<div id="main">
+    <%include ../Header/nav.html%>
+
+
+
+    <div id="img">
+        <img src="../images/CollegeImages/DSC_2298.JPG" alt="">
+        <div id="nameDiv">
+            <h2>Policies
+            </h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <table>
+            <tr>
+                <th style="width: 7%;">S.No</th>
+                <th style="text-align: center;">Policy</th>
+                
+            </tr>
+           
+            <tr>
+                <td>1</td>
+                <td><a href="https://www.itmgoi.in//IQAC/docs/policies/Final%20HR%20Policy%2020092024.pdf" target="_blank">HR POLICY</a></td>
+                
+            </tr>
+            <!-- <tr>
+                <td>2</td>
+                <td><a href="#" download="path to file">TAP CELL POLICY</a></td>
+                
+            </tr> -->
+            <tr>
+                <td>3</td>
+                <td><a href="../docs/About Institute/ITM_Innovation_Startup_Policy_2021.pdf" download="ITM_Innovation_Startup_Policy_2021.pdf">INNOVATION & STARTUP POLICY</a></td>
+                
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="../docs/About Institute/Infrastructure Maintenance Policy Revised- Arun.docx.pdf" download="Infrastructure Maintenance Policy">INFRASTRUCTURE MAINTENANCE POLICY</a></td>
+               
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="../docs/About Institute/Electrical Maintenance Cell.pdf" download="Electrical Maintenance Cell.pdf">ELECTRICAL MAINTENANCE POLICY</a></td>
+                
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><a href="../docs/About Institute/Research Promotion Policy.pdf" download="Research Promotion Policy.pdf">POLICY FOR PROMOTION OF RESEARCH</a></td>
+                
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><a href="https://www.itmgoi.in/NAAC/docs/policies/IT%20Policy.pdf" target="_blank">IT POLICY</a></td>
+                
+            </tr>
+            <!-- <tr>
+                <td>8</td>
+                <td><a href="#" download="path to file">START-UP POLICY</a></td>
+               
+            </tr> -->
+        
+        </table>
+        
+    </div>
+    <%include ../Footer/footer.html%>
+
+
+</div>
+</body>
+</html>

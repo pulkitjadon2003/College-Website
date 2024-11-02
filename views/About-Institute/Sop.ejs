@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Operating Procedure</title>
+
+    <link rel="stylesheet" href="../stylesheets/About Institute/inner.css">
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 100%;
+            width: 100%;
+        }
+
+        #main {
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 8vh;
+        }
+        .container h2{
+            margin-top: 30px;
+            background-color: rebeccapurple;
+            padding: 20px;
+            color: white;
+            text-align: center;
+
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rebeccapurple;
+            color: white;
+        }
+        td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+<div id="main">
+    <%include ../Header/nav.html%>
+
+
+
+    <div id="img">
+        <img src="../images/CollegeImages/DSC_2298.JPG" alt="">
+        <div id="nameDiv">
+            <h2>Standard Operating Procedure
+            </h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <table>
+            <tr>
+                <th style="width: 7%;">S.No</th>
+                <th style="text-align: center;"> Title</th>
+                
+            </tr>
+           
+            <tr>
+                <td>1</td>
+                <td><a href="../docs/About Institute/Fire Safety.pdf" download="">Fire Safety</a></td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="../docs/About Institute/Electrical Maintenance Cell.pdf" download="">Electrical Maintenance</a></td>
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="../docs/About Institute/SOP Security.pdf" download="">Security Services</a></td>
+                
+            </tr>
+            <!-- <tr>
+                <td>4</td>
+                <td><a href="#" download="">Students club</a></td>
+               
+            </tr> -->
+            <!-- <tr>
+                <td>5</td>
+                <td><a href="#" download="">NPTEL Local Chapter</a></td>
+                
+            </tr> -->
+            <!-- <tr>
+                <td>6</td>
+                <td><a href="#" download="">Discipline</a></td>
+                
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><a href="#" download="">Hostel Residents</a></td>
+                
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><a href="#" download="">Sports</a></td>
+                
+            </tr> -->
+        </table>
+        
+    </div>
+    <%include ../Footer/footer.html%>
+
+
+</div>
+</body>
+</html>

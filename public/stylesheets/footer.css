@@ -1,0 +1,261 @@
+    footer{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        margin-top: 15vh;
+        
+    }
+    
+    footer #upper-footer{
+        height: 40%;
+        width: 80%;
+        background-color: rebeccapurple;
+        z-index: 99;
+        position: absolute; 
+        left: 10%;
+        
+        
+    }
+    
+    footer #upper-footer>img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -2;
+        /* opacity: .5; */
+    }
+    
+    footer #upper-footer h1{
+        font-size: 3.5vmax;
+        color: rgb(255, 255, 255);
+        width: 40%;
+        margin: 8vh 6vw;
+        font-weight:600;
+        
+    }
+    footer #upper-footer button{
+        background-color: #FFCA09;
+        height: 3vmax;
+        padding: 8px 12px;
+        left: 10%;
+        bottom: 14%;
+        z-index: 12;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    footer #upper-footer button p{
+        font-size: 1.3vmax !important;
+        z-index: 12;
+        position: relative;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    footer #upper-footer button #hover-button{
+        width : 30vh;
+        height: 30vh;
+        background-color: rgb(255, 255, 255);
+        z-index: -1;
+        position: absolute;
+        right: 100%;
+        transform:scaleY(.15);
+        clip-path: polygon(0 0, 75% 0, 100% 50%, 75% 100%, 0 100%);;
+        transition: all ease .4s;
+    }
+    
+    footer #upper-footer #student-image img{
+        height: 58vh;
+        width: auto;
+        object-fit: cover;
+    }
+    footer #upper-footer #student-image{
+        right: 10%;
+        bottom: -8.5%;
+        position: absolute;
+        /* background-color: red; */
+    
+    }
+    footer #upper-footer button:hover #hover-button{
+        transform:scaleY(1);
+        right:  -20%;
+    }
+    
+    footer #lower-footer{
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        width: 100%;
+        z-index: 1;
+        background-color: #1E0258;
+        padding-top: 10%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 5px;
+    }
+    
+    footer #first-foot{
+        height: 100%;
+        width: 20vw;
+        /* background-color: red; */
+        position: relative;
+        padding: 15vh 10vh;
+        padding-right: 0;
+    }
+    
+    footer #first-foot img{
+        height: 5vmax;
+        margin-bottom: 2.5vh;
+    }
+    
+    footer #first-foot p{
+        width:80%;
+    }
+    footer #first-foot #follow-us{
+        width:40%;
+        /* background-color: rebeccapurple; */
+    }
+    
+    footer  h4{
+        position: relative;
+        height: 40px;
+        font-weight: 400;
+        color: #dadada;
+    }
+    
+    footer #first-foot #follow-us #social-media{
+        height: 25px;
+        width: 12vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* align-self: center;  */
+        overflow: hidden;
+        /* background-color: red; */
+    }
+    footer #first-foot #follow-us #social-media div{
+        position: relative;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all ease .4s;
+        transition-delay: .1s;
+    }
+    
+    footer #first-foot #follow-us #social-media div:hover {
+        transform: translateY(-23px);
+    }
+    
+    footer #first-foot #follow-us #social-media i{
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        transform-origin: 50% 50%;
+        margin-bottom: 2px;
+        /* background-color: blue; */
+        /* padding: 2px; */
+    }
+    footer #first-foot #follow-us #social-media img{
+        width:24px;
+        cursor: pointer;
+        height: auto;
+        /* transform-origin: 50% 50%; */
+        position: absolute;
+        transform: translateY(28px);
+    }
+    footer  h4::after{
+        content: attr(div);
+        height: .5px;
+        width: 3rem;
+        background-color: #dadada ;
+        position: absolute;
+        bottom: 0;
+        left: 3%;
+        margin-bottom: 2vh;
+    }
+    
+    footer #second-foot{
+        height: 100%;
+        width: 38vw;
+        /* background-color: red; */
+        padding: 15vh 0;
+    
+    }
+    footer #second-foot ul{
+        list-style: none;
+        font-size: 14px;
+    }
+    footer #second-foot ul li::before{
+        content: '';
+      display: inline-block;
+      height: 15px;
+      width: 24px;
+      background-image: url('../images/triangle-point-bullet.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      /* margin-left: -35px; */
+    }
+    
+    footer #second-foot ul li{
+        margin-top: .8vh;
+    
+    }
+    footer #second-foot ul li a{
+        text-decoration: none;
+        color: #dadada;
+        transition: all ease .3s;
+    }
+    footer #second-foot ul li a:hover{
+        color: white;
+    }
+    /* 
+    footer #second-foot ul li #link-underline{
+        height: 1px;
+        width: 100%;
+        background-color: blue;
+    } */
+    footer #third-foot{
+        height: 100%;
+        width: 15vw;
+        /* background-color: red; */
+        padding: 15vh 5vh;
+    
+    }
+    footer #third-foot ul{
+        list-style: none;
+        font-size: 14px;
+    }
+    footer #third-foot ul li{
+        margin-top: 1.4vh;
+        color: #dadada;
+    
+    }
+    footer #third-foot ul i{
+        text-decoration: none;
+        color: rebeccapurple;
+        font-size: 18px;
+        margin-right: 2vh;
+    
+    }
+    footer #fourth-foot{
+        height: 100%;
+        width: 18vw;
+        /* background-color: red; */
+        padding: 15vh 5vh;
+    
+    }
+    
+    footer #fourth-foot h4{
+        white-space: nowrap;
+    }
+    
+    footer #fourth-foot p{
+        color: #dadada;
+        font-size: 14px;
+    }
+    
+    

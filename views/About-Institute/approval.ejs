@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approval</title>
+    
+    <link rel="stylesheet" href="../stylesheets/About Institute/inner.css">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 100%;
+            width: 100%;
+        }
+
+        #main {
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom:8vh ;
+        }
+        .container h2{
+            margin-top: 30px;
+            background-color: rebeccapurple;
+            padding: 20px;
+            color: white;
+            text-align: center;
+
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rebeccapurple;
+            color: white;
+        }
+        td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+</head>
+<body>
+<div id="main">
+    <%include ../Header/nav.html%>
+
+
+
+    <div id="img">
+        <img src="../images/CollegeImages/DSC_2298.JPG" alt="">
+        <div id="nameDiv">
+            <h2>AICTE Approval & Mandatory Disclosure
+            </h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Downloads</th>
+                <th>Type</th>
+                
+            </tr>
+           
+            <tr>
+                <td>Accreditation Status</td>
+                <td><a href="/About-Institute/accredation" view="">View</a></td>
+                <td>PDf</td>
+                
+                
+            </tr>
+            <tr>
+                <td>AICTE Approvals & Mandatory Disclosure	</td>
+                <td><a href="#" download="path to file">Download File</a></td>
+                <td>PDF</td>
+                
+            </tr>
+            <tr>
+                <td>Approval of Programmes,Affiliation, Autonomy & Accreditation Status	</td>
+                <td><a href="#" download="path to file">Download File</a></td>
+                <td>PDF</td>
+                
+            </tr>
+            <tr>
+                <td>AISHE Certificate</td>
+                <td><a href="#" download="path to file">Download File</a></td>
+                <td>PDF</td>
+                
+            </tr>
+            <tr>
+                <td>Jiwaji Autonomy Letter	</td>
+                <td><a href="#" download="path to file">Download File</a></td>
+                <td>PDF</td>
+                
+            </tr>
+        </table>
+        
+    </div>
+    <%include ../Footer/footer.html%>
+
+
+</div>
+</body>
+</html>

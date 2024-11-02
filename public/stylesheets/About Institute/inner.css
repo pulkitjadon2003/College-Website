@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+    position: relative;
+    /* display: flex; */
+    /* overflow: hidden; */
+
+}
+#img{
+    height: 58vh;
+    width: 100vw;
+    position: relative;
+}
+#img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center ;
+}
+#img #nameDiv{
+    height: 9vh;
+    width: fit-content;
+    background-color: #d9d9d9;
+    /* border-top: maroon 5px solid; */
+    position: relative;
+    top: -25%;
+    left: 5%;
+
+
+}
+
+#img #nameDiv #line{
+    height: 10%;
+    width: 80%;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 0;
+}
+
+#nameDiv h2{
+    padding-top: 5%;
+    font-size: 40px;
+    text-align: center;
+    color:black;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+
+}
+
+#section1 {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box1{
+    height: fit-content;
+    width: 100%;
+    /* background-color: salmon; */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* padding-top: 2.5%; */
+    /* border: 1px solid rebeccapurple; */
+
+
+}
+.box1 .line{
+    height: 2px;
+    width: 50%;
+    background-color: rgb(160, 107, 37);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+#box1{
+    height: 30% !important;
+}
+.box1 .content1{
+    height: auto;
+    width: 40%;
+    color: rebeccapurple;
+    text-align: center;
+    font-size: 30px             ;
+    /* position: absolute; */
+    padding-top: 50px;
+    /* background-color: red; */
+    padding-left: 80px;
+    
+
+}
+.content1 h4{
+    position: relative;
+    height: 12vh;
+    /* background-color: blue; */
+    width: 25vw;
+}
+/* .content1 h4::after{
+    content: attr(div);
+    height: 5px;
+    width: 8rem;
+    background-color: rebeccapurple ;
+    position: absolute;
+    right:  23%;
+    bottom: 0;
+    margin-top: 2vh;
+    
+} */
+.box1 .content2{
+    height: fit-content;
+    width: 50%;
+    color: black;
+    text-align: left;
+    font-size: 20px             ;
+    /* position: absolute; */
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    /* background-color: #d9d9d9; */
+    /* padding: 0 20px; */
+    
+
+}
+
+#box2{
+    height: 80%;
+    width: 100%;
+    background-color: rebeccapurple;
+    position: relative;
+    display: flex;
+
+}
+#text{
+    height: 95%;
+    width: 50%;
+    color: white;
+    padding: 0 60px;
+    /* position: absolute; */
+    margin-top: 10%;
+    transition: all ease .4s;
+
+
+}
+#text h1{
+    text-align: center;
+    margin-top: 25px;
+}
+#text p{
+    text-align: left;
+    font-size: 1vmax;
+    margin-top: 20px;
+}
+#text #dots{
+    transition: all ease .4s;
+}
+#more {
+    display: none;
+    
+}
+#more1 {
+    display: none;
+    
+}
+
+#text button{
+    background-color: #FFC400;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    margin-top: 3%;
+    color: white;
+    font-size: 1.1vmax;
+    color: black;
+    transition: all ease .4s;
+    cursor: pointer;
+    width: 8vw;
+}
+
+.showMore{
+    height: 0%;
+    width: 100%;
+    overflow-y: hidden;
+    transition: all ease .4s;
+    font-size: 1vmax;
+
+}
+#photo{
+    height: 100%;
+    width: 50%;
+    /* color: blue; */
+    /* position: absolute; */
+    /* background-image: url(./DSC_0522.JPG); */
+
+}
+#photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#box2 ul{
+    list-style: none;
+    font-size: 19px;
+    /* position: absolute; */
+    /* background-color: red; */
+}
+#box2 ul li{
+    font-size: 20px;
+    margin: 1px;
+}
+#box2 ul li::before{
+     content: '';
+  display: inline-block;
+  height: 15px;
+  width: 24px;
+  background-image: url('/images/triangle-point-bullet.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -35px;
+}
+
+#accreditation{
+    width:  7% !important;
+    height: auto !important;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+    right: 4%;
+    bottom: 3%;
+
+   
+}
+#img p{
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+    right: 2%;
+    bottom: 1%;
+    position: absolute ;
+}
+
+

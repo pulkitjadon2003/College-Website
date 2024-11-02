@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Rule</title>
+
+    <link rel="stylesheet" href="../stylesheets/About Institute/inner.css">
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+            scroll-behavior: smooth;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        #main {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+
+
+        h1 {
+            color: #333;
+        }
+
+
+        #cal {
+            height: 100%;
+            width: 70%;
+            background-color: white;
+            margin-left: 15%;
+            margin-top: 2%;
+            padding: 30px;
+            position: relative;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main">
+        <%include ../Header/nav.html%>
+
+        <div id="img">
+            <img src="../images/CollegeImages/DSC_2298.JPG" alt="">
+            <div id="nameDiv">
+                <h2>Service Rule</h2>
+                <div id="line"></div>
+    
+            </div>
+        </div>
+        <div id="cal">
+            <!-- <embed type="application/x-google-chrome-pdf" src="chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/44a53639-f3c6-46c4-a0d5-f6bc73d3c268" original-url="https://web.mitsgwalior.in/images/mainmenu/Academics/1st%20Year%20Academic%20Calendar%202024-25%20Session.pdf" background-color="4283586137" javascript="allow"> -->
+            <h3>Service Rule</h3>
+            <object class="pdf"
+                data='https://www.itmgoi.in/NAAC/docs/criteria/c6/c6.2/c6.2.1/Additional%20Information%20-%20Guidelines%20for%20appointment%20and%20service%20rules.pdf'
+                width="70%; " height="100%"  style=" aspect-ratio: 4/3;">
+            </object>
+        </div>
+
+        <%include ../Footer/footer.html%>
+
+
+    </div>
+
+</body>
+
+</html>
