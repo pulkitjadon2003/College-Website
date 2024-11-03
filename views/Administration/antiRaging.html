@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti Ragging Committee</title>
+    <link rel="stylesheet" href="/font.css">
+    <link rel="stylesheet" href="adminis.css">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            color: white;
+            height: 45vh;
+            position: relative;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            font-size: 3vmax;
+            font-weight: 500;
+            z-index: 5;
+        }
+        .header img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(70%);
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rebeccapurple;
+            color: white;
+        }
+        td a {
+            color: #007bff;
+           
+            padding: 5px;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+    </style>
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/Header_folder/nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav-container").innerHTML = data;
+            // Load the nav.js file after the HTML is loaded
+            let script = document.createElement("script");
+            script.src = "/Header_folder/nav.js";
+            document.body.appendChild(script);
+          });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/Footer_folder/footer.html") // Load the nav.html file
+          .then((response) => response.text()) // Get its content
+          .then((data) => {
+            document.getElementById("footer-container").innerHTML = data; // Insert into the page
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="nav-container"></div>
+    <div id="img">
+        <img src="./dunedin-university-of.jpg" alt="">
+        <div id="nameDiv">
+            <h2>Anti Ragging Committee</h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2></h2>
+        <table>
+            <tr>
+                <th width="5%">S.No.</th>
+                <th width="20%">Title</th>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="./anti.pdf" download="anti-ragging.pdf">Anti-ragging Committee</a></td>
+               
+            </tr>
+            <!-- <tr>
+                <td>2</td>
+                <td><a href="#" download="path to file">Proctorial Board</a></td>
+               
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="#" download="path to file">Anti Ragging Duty</a></td>
+               
+            </tr> -->
+            <tr>
+                <td>4</td>
+                <td><a href="./anti-ragging.pdf" download="anti-ragging.pdf">Minutes of Meeting</a></td>
+               
+            </tr>
+           
+        </table>
+    </div>
+
+    
+        <div id="footer-container"></div>
+
+</body>
+</html>
+
+
+
+

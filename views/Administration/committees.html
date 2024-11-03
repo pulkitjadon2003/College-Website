@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committees</title>
+    <link rel="stylesheet" href="/font.css">
+    <link rel="stylesheet" href="adminis.css">
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .header {
+            color: white;
+            height: 45vh;
+            position: relative;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            font-size: 3vmax;
+            font-weight: 500;
+            z-index: 5;
+        }
+        .header img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(70%);
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rebeccapurple;
+            color: white;
+        }
+        td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+    </style>
+ <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/Header_folder/nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav-container").innerHTML = data;
+            // Load the nav.js file after the HTML is loaded
+            let script = document.createElement("script");
+            script.src = "/Header_folder/nav.js";
+            document.body.appendChild(script);
+          });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/Footer_folder/footer.html") // Load the nav.html file
+          .then((response) => response.text()) // Get its content
+          .then((data) => {
+            document.getElementById("footer-container").innerHTML = data; // Insert into the page
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="nav-container"></div>
+    <div id="img">
+      <img src="./dunedin-university-of.jpg" alt="">
+      <div id="nameDiv">
+          <h2>Committee</h2>
+          <div id="line"></div>
+
+      </div>
+  </div>
+   
+    <div class="container">
+        <table>
+  <tr>
+    <th colspan="3">Building Committee</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+   <table>
+  <tr>
+    <th colspan="3">Women Guidance Grievance & Redressal Cell</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+ <table>
+  <tr>
+    <th colspan="3">Girls Grievance Cell</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Student Grievance Cell</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">SC/ST Cell</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">UHV Cell</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">SC/ST Cell</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">E News Editorial, Editorial Board, Technical</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Internal Complaint Committee</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Minority Cell</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Code Of Ethics</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Code of Conduct</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Swachhata Samiti</th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Advisory Committee for National Service Scheme Activity </th>
+  </tr>
+  <tr>
+    <td>Dr. MK Trivedi</td>
+    <td>Chairman</td>
+    <td>9893003690</td>
+  </tr>
+  <tr>
+    <td>Dr. Anjali Soti</td>
+    <td>Member</td>
+    <td>9301118909</td>
+  </tr>
+  <tr>
+    <td>Dr. Shishir Dixit</td>
+    <td>Member</td>
+    <td>8989827830</td>
+  </tr>
+  <tr>
+    <td>Dr. Abhilash Shukla</td>
+    <td>Member</td>
+    <td>9805405215</td>
+  </tr>
+  <tr>
+    <td>Dr. Pratesh Jayaswal</td>
+    <td>Member</td>
+    <td>9826561725</td>
+  </tr>
+  <tr>
+    <td>Prof. Prabhakar Sharma</td>
+    <td>Member</td>
+    <td>9425339330</td>
+  </tr>
+  <tr>
+    <td>Er. Arpit Goyal</td>
+    <td>Member</td>
+    <td>9406980151</td>
+  </tr>
+</table>
+    </div>
+
+        <div id="footer-container"></div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="/font.css">
+    <link rel="stylesheet" href="inner.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+            scroll-behavior: smooth;
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        #main {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+
+
+        h1 {
+            color: #333;
+        }
+
+
+        #cal {
+            height: 70%;
+            width: 70%;
+            background-color: white;
+            margin-left: 15%;
+            margin-top: 2%;
+
+            padding: 30px;
+            position: relative;
+        }
+    </style>
+    <script src="/nav-enable.js"></script>
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav-container"></div>
+        <div id="img">
+            <img src="./dunedin-university-of.jpg" alt="">
+            <div id="nameDiv">
+                <h2>Duties and Responsibilities</h2>
+                <div id="line"></div>
+    
+            </div>
+        </div>
+        <div id="cal">
+            <!-- <embed type="application/x-google-chrome-pdf" src="chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/44a53639-f3c6-46c4-a0d5-f6bc73d3c268" original-url="https://web.mitsgwalior.in/images/mainmenu/Academics/1st%20Year%20Academic%20Calendar%202024-25%20Session.pdf" background-color="4283586137" javascript="allow"> -->
+            <h3>Acadimic Calendar</h3>
+            <object class="pdf"
+                data="https://web.mitsgwalior.in/images/mainmenu/Academics/1st%20Year%20Academic%20Calendar%202024-25%20Session.pdf"
+                width="800" height="300">
+            </object>
+        </div>
+
+        <div id="footer-container"></div>
+
+    </div>
+
+</body>
+
+</html>
