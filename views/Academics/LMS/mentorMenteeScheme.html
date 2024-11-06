@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorMentee</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+            scroll-behavior: smooth;
+        }
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        #main {
+            min-height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        
+        #img {
+            height: 40vh;
+            width: 100vw;
+            position: relative;
+          }
+          
+          #img img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+            object-position: center;
+          }
+          
+          #img #nameDiv {
+            height: 9vh;
+            width: fit-content;
+            background-color: #d9d9d9;
+            position: relative;
+            top: -30%;
+            left: 5%;
+          
+          
+          }
+          
+          #img #nameDiv #line {
+            height: 10%;
+            width: 80%;
+            background-color: rebeccapurple;
+            position: absolute;
+            top: 0;
+          }
+          
+          #nameDiv h2 {
+            padding-top: 5%;
+            font-size: 40px;
+            text-align: center;
+            color: black;
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+          }
+
+
+        #content {
+            height: 100%;
+            width: 95%;
+            position: relative;
+            padding: .2rem 7rem;
+
+
+        }
+
+
+        #section2,
+        #section1 {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0 0 10px;
+        }
+
+        #section1 h3 {
+            color: rebeccapurple;
+        }
+
+
+
+        #section1 h5 {
+            font-size: 15px;
+            max-width: 90%;
+            text-align: justify;
+            margin-left: 5%;
+        }
+
+        #section2 p,
+        h3 {
+            color: #000;
+        }
+
+        #content p,
+        #content ul {
+            margin: 5px 0;
+        }
+
+        #content ul {
+            padding-left: 20px;
+        }
+
+        #content li {
+            margin-bottom: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rebeccapurple;
+            color: white;
+        }
+        td a {
+            color: #007bff;
+            background-color: #dadada;
+            padding: 5px;
+            text-decoration: none;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="/nav-enable.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav-container"></div>
+
+        <div id="img">
+            <img src="../dunedin-university-of.jpg" alt="">
+            <div id="nameDiv">
+                <h2>Academic Calender</h2>
+                <div id="line"></div>
+    
+            </div>
+        </div>
+        <!-- <div id="img">
+            <img src="./dunedin-university-of.jpg" alt="">
+            <div id="nameDiv">
+                <h2>The Engineering College Society
+                </h2>
+                <div id="line"></div>
+
+            </div>
+        </div> -->
+
+        <div id="content">
+
+            <section id="section1">
+                <h3>Objective</h3>
+                <p>
+                    Mentor-Mentee System of the institute has been implemented with an objective to bridge the gap
+                    between the faculty members and students and provide guidance on the academic and professional
+                    development matters.
+                </p>
+
+            </section>
+            <section id="section1">
+                <h3>GUIDELINES FOR IMPLEMENTATION OF MENTOR-MENTEE SCHEME</h3>
+                <p>
+                <ul>
+                    <li>UG I year students/mentee will be assigned student mentors from II and III year undergraduate
+                        program and a faculty mentor.
+                    </li>
+                    <li>There will be a group of 05 to 13 mentees under each faculty mentor whom they serve as mentors.
+                    </li>
+                    <li>After the allotment of mentees, every faculty mentor will collect the information as per
+                        Annexure-I through Google form.The template of the same is shared at following link:
+                    </li>
+                    <li>Each faculty mentor will conduct meeting twice in a month to understand and counsel the mentees
+                        on the existing academic policies, extracurricular activities or personal matters.
+                    </li>
+                    <li>The report of activity will be submitted by faculty mentor as per Annexure-II at following link
+                        : https://forms.gle/a2sLB3wP3S5AdxEm9
+                    </li>
+                </ul>
+                </p>
+            </section>
+            <section id="section1">
+                <h3>ROLE OF A FACULTY MENTOR
+                </h3>
+                <p>
+                <ul>
+                    <li>To take the lead in supporting a mentee for his/her welfare through one-to-one relationship.
+                    </li>
+                    <li>To build a relationship of trust by caring and planning.
+                    </li>
+                    <li>To serve as a positive role model.
+                    </li>
+                    <li>To motivate mentees for interdisciplinary research/innovation within a group.
+                    </li>
+                </ul>
+
+                </p>
+            </section>
+            <section id="section1">
+                <h3>DESIRABLE QUALITIES OF A MENTOR
+
+                </h3>
+                <p>
+                <ul>
+                    <li>Good listener
+                    </li>
+                    <li>Encouraging and supportive
+                    </li>
+                    <li>Patient and flexible
+                    </li>
+                </ul>
+
+                </p>
+            </section>
+            <section id="section1">
+                <h3>RESPONSIBILITIES OF A FACULTY MENTOR
+
+
+                </h3>
+                <p>
+                <ul>
+                    <li>Meet the mentee students twice in a month either online or offline.
+                    </li>
+                    <li>Make the mentees aware of existing system of the institute related to academic, professional
+                        development and guide on personal matters as well.
+                    </li>
+                    <li>Discover talents and interests of mentees and encourage them to exhibit them by participating in
+                        various activities.
+                    </li>
+                    <li>Motivate the students to follow ethics, good practices and universal human values.
+                    </li>
+                    <li>Guide mentees regarding the importance of training programs, internships, industry visits,
+                        students’ committees at the institute, club activities, seminar, workshops, conferences,
+                        examination norms, general structure of the scheme, MOOC courses etc.
+                    </li>
+                    <li>Keep the record of academic and other professional activities of mentees.
+                    </li>
+                    <li>Assess the performance of Student Mentors on the basis of their sincerity and contribution in
+                        activities assigned to them.
+                    </li>
+                    <li>Contact parents/guardians if situation demands e.g. irregularities, negative behavioral changes
+                        and interpersonal relations, detrimental activities etc.
+                    </li>
+                </ul>
+
+                </p>
+            </section>
+            <section id="section1">
+                <h3>ROLE OF STUDENT MENTOR
+                </h3>
+                <p>
+                <ul>
+                    <li>To help the mentees in their holistic development and growth.
+                    </li>
+                    <li>To act as a link between faculty mentor and mentees.
+                    </li>
+                    <li>To attend fortnightly meeting regularly and encourage mentees for the same.
+                    </li>
+                    <li>To contribute to the development of the Mentor-Mentee Scheme by suggesting new ideas.
+                    </li>
+                </ul>
+
+                </p>
+            </section>
+            <section id="section1">
+                <h3>RESPONSIBILITIES OF A MENTEE
+
+                </h3>
+                <p>
+                <ul>
+                    <li>Respect the mentor
+                    </li>
+                    <li>Regularly attend the meetings with the mentor and strictly follow the instructions given by
+                        mentors.
+                    </li>
+                    <li>Keep the mentors updated regarding your academic and other professional developments.
+                    </li>
+                </ul>
+
+                </p>
+            </section>
+            <section id="section1">
+                <h3>RESPONSIBILITIES OF THE INSTITUTE COORDINATOR OF MENTOR- MENTEE SYSTEM
+
+
+                </h3>
+                <p>
+                <ul>
+                    <li>Allocate mentors to all I year UG students.
+
+                    </li>
+                    <li>Support the mentors for effective implementation of mentor-mentee system at the institute level.
+                    </li>
+                    <li>Submit the annual report to competent authority.
+                    </li>
+                </ul>
+
+                </p>
+            </section>
+
+            <section id="section1">
+                <h3>Mentor Mentee List
+                </h3>
+
+                <div class="container">
+                  
+                    <table>
+                        <tr>
+                            <th width="20%">S.No.</th>
+                            <th width="80%">Title</th>
+
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#" download="path to file">Mentor Mantee List 2022-2023
+                                    </a></td>
+
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="#" download="path to file">Mentor Mantee List 2022-2023
+                            </a></td>
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><a href="#" download="path to file">Mentor Mantee List 2022-2023
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><a href="#" download="path to file">Mentor Mantee List 2022-2023
+                            </a></td>
+
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><a href="#" download="path to file">Mentor Mantee List 2022-2023
+                            </a></td>
+
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="#" download="path to file">Mentor Mantee List 2022-2023
+                            </a></td>
+
+                        </tr>
+
+                    </table>
+                </div>
+
+            </section>
+        </div>
+
+
+
+        <div id="footer-container"></div>
+
+    </div>
+
+</body>
+
+</html>

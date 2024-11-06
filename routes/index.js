@@ -13,6 +13,13 @@ router.get('/:folder/:file', function(req, res, next) {
   res.render(`${req.params.folder}/${req.params.file}`);
 });
 
+router.get('/Academics/:subfolder/:file', function(req, res, next) {
+  res.render(`Academics/${req.params.subfolder}/${req.params.file}`);
+});
+
+
+
+
 
 
 

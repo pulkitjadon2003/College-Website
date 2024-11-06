@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science and Engineering</title>
+
+    <link rel="stylesheet" href="academic.css">
+    <style>
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            max-width: 99%;
+            margin: 20px auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-content {
+            flex: 1;
+            margin-right: 20px;
+        }
+        
+        .card-heading {
+            margin: 0;
+            font-size: 24px;
+            color: rebeccapurple;
+        }
+        
+        .card-paragraph {
+            font-size: 1vw;
+            color: #555;
+            margin: 10px 0;
+        }
+        
+        .card-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rebeccapurple;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .card-button:hover {
+            background-color: rebeccapurple;
+        }
+        
+        .card-image img {
+            max-width: 150px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card:hover .card-image img {
+            transform: scale(1.1);
+        }
+        
+       
+    </style>
+    <script src="/nav-enable.js"></script>
+    <script src="addSidebar.js"></script>
+
+</head>
+<body>
+    <div id="nav-container"></div>
+
+    <div id="img">
+        <img src="../dunedin-university-of.jpg" alt="">
+        <div id="nameDiv">
+            <h2>Department of Computer Science and Engineering</h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            
+        </aside>
+
+        <main class="content">
+            
+        </main>
+    </div>
+    <div id="footer-container"></div>
+
+    <script src="laboratoriesClutter.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science and Engineering</title>
+
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container{
+            position: relative;
+            margin-bottom: 5%;
+        }
+      
+        .sports{
+            font-size: 18px;
+            margin: 15px;
+            line-height: 1.3;
+            /* background-color: antiquewhite; */
+            padding: 12px;
+            border-radius: 10px;
+        }
+    
+       .sports h3{
+        color: #503091;
+       }
+       .sports p{
+        text-align: justify;
+       }
+       .gallery-container {
+        display: flex;
+        gap: 30px;
+        padding: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .gallery-item {
+        position: relative;
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.5s ease;
+    }
+    
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .gallery-item:hover .overlay {
+        opacity: 1;
+    }
+    
+    .text {
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    .section {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    
+    .left-section, .right-section {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        /* background-color: #f9f9f9; */
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #503091;
+    }
+    
+   
+        
+
+    </style>
+    <link rel="stylesheet" href="academic.css">
+    <script src="/nav-enable.js"></script>
+    <script src="addSidebar.js"></script>
+
+</head>
+<body>
+    <div id="nav-container"></div>
+
+    <div id="img">
+        <img src="../dunedin-university-of.jpg" alt="">
+        <div id="nameDiv">
+            <h2>Department of Computer Science and Engineering</h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            
+        </aside>
+        <main class="content">
+            
+        
+                
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="./images/two days workshop on entrepreurship (1).jpeg" alt="Picture 3">
+                        <div class="overlay">
+                            <div class="text">two days workshop on entrepreurship</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/One week workshop on IOT-2.jpeg" alt="Picture 3">
+                        <div class="overlay">
+                            <div class="text">One week workshop on IOT</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/Center of excellence inaugration-1.jpeg" alt="Picture 1">
+                        <div class="overlay">
+                            <div class="text">CENTER OF EXCELLENCE INAUGRATION</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/one day expert lecture on DBMS-2.jpeg" alt="Picture 2">
+                        <div class="overlay">
+                            <div class="text">ONE DAY EXPERT LECTURE ON DBMS</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/Expert Lecture on AI and Robotics.jpeg" alt="Picture 3">
+                        <div class="overlay">
+                            <div class="text">Expert Lecture on AI and Robotics</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/One day FDP on MS-Excel-2.jpeg" alt="Picture 3">
+                        <div class="overlay">
+                            <div class="text">One day FDP on MS-Excel</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/one day webinar on exploring Data Analytics and Machine Learning_1.png" alt="Picture 1">
+                        <div class="overlay">
+                            <div class="text">One day webinar on exploring Data Analytics and Machine Learning</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/One day workshop on virtual Lab.jpeg" alt="Picture 2">
+                        <div class="overlay">
+                            <div class="text">One day workshop on virtual lab </div>
+                        </div>
+                    </div>
+                   
+                    <div class="gallery-item">
+                        <img src="./images/two days workshop on django.jpeg" alt="Picture 2">
+                        <div class="overlay">
+                            <div class="text">two days workshop on django</div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="./images/Five days FDP on ML and AI using Python-2.jpeg" alt="Picture 2">
+                        <div class="overlay">
+                            <div class="text">Five days FDP on ML and AI using Python</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/FIVE DAYS ATAL FDP.png" alt="Picture 3">
+                        <div class="overlay">
+                            <div class="text">FIVE DAYS ATAL FDP</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/Four days FDP on python & data analytics.jpeg" alt="Picture 3">
+                        <div class="overlay">
+                            <div class="text">Four days FDP on python & data analytics</div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+        
+        
+                
+        
+                
+     
+        </main> 
+    </div>
+    <div id="footer-container"></div>
+
+</body>
+</html>
