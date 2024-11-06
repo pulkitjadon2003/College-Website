@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department of Computer Science and Engineering</title>
-    <script src="script.js"></script>
+    
 
     <style>
         body {
@@ -115,16 +115,16 @@
         }
         
     </style>
-    <link rel="stylesheet" href="academic.css">
-    <script src="/nav-enable.js"></script>
-    <script src="addSidebar.js"></script>
+    <link rel="stylesheet" href="/stylesheets/Academics/academic.css">
+
+    <script src="../javascripts/CSE/addSidebarCSE.js"></script>
 
 </head>
 <body>
-    <div id="nav-container"></div>
+    <%include ../Header/nav.html%>
 
     <div id="img">
-        <img src="../dunedin-university-of.jpg" alt="">
+        <img src="../images/CollegeImages/DSC_2295.JPG" alt="">
         <div id="nameDiv">
             <h2>Department of Computer Science and Engineering</h2>
             <div id="line"></div>
@@ -132,7 +132,8 @@
     </div>
     <div class="container">
         <aside class="sidebar">
-            
+            <% include sidebar.html  %>
+
         </aside>
         <main class="content">
             
@@ -141,7 +142,7 @@
                     <div class="course">
                         <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem I</a></div>
                         <div class="actions">
-                            <a href="./doc/frm_download_file.pdf">Download File</a>
+                            <a href="../docs/CSE/frm_download_file.pdf">Download File</a>
 
                             
                         </div>
@@ -149,37 +150,37 @@
                     <div class="course">
                         <div class="course-title">B.Tech (Computer Science and Engineering)  | <a href="#" class="sem">Sem II</a></div>
                         <div class="actions">
-                            <a href="./doc/frm_download_file.pdf">Download File</a>
+                            <a href="../docs/CSE/frm_download_file.pdf">Download File</a>
                         </div>
                     </div>
                     <div class="course">
                         <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem III</a></div>
                         <div class="actions">
-                            <a href="./doc/frm_download_file (2).pdf">Download File</a> 
+                            <a href="../docs/CSE/frm_download_file (2).pdf">Download File</a> 
                         </div>
                     </div>
                     <div class="course">
                         <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem IV</a></div>
                         <div class="actions">
-                            <a href="./doc/frm_download_file (3).pdf">Download File</a>
+                            <a href="../docs/CSE/frm_download_file (3).pdf">Download File</a>
                         </div>
                     </div>
                     <div class="course">
                         <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem V</a></div>
                         <div class="actions">
-                            <a href="./doc/frm_download_file (4).pdf">Download File</a>
+                            <a href="../docs/CSE/frm_download_file (4).pdf">Download File</a>
                         </div>
                     </div>
                     <div class="course">
                         <div class="course-title">B.Tech (Computer Science and Engineering)| <a href="#" class="sem">Sem VI</a></div>
                         <div class="actions">
-                            <a href="./doc/frm_download_file (5).pdf">Download File</a> 
+                            <a href="../docs/CSE/frm_download_file (5).pdf">Download File</a> 
                         </div>
                     </div>
                     <div class="course">
                         <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem VII</a></div>
                         <div class="actions">
-                            <a href="./doc/frm_download_file (6).pdf">Download File</a>
+                            <a href="../docs/CSE/frm_download_file (6).pdf">Download File</a>
                         </div>
                     </div>
                     <div class="course">
@@ -249,7 +250,7 @@
 
         </main> 
     </div>
-    <div id="footer-container"></div>
+    <%include ../Footer/footer.html%>
 
 </body>
 </html>

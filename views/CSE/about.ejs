@@ -8,10 +8,12 @@
     
 </head>
 <body>
+
+    <%include ../Header/nav.html%>
     
 
     <div id="img">
-        <img src="" alt="">
+        <img src="../images/CollegeImages/DSC_2295.JPG" alt="">
         <div id="nameDiv">
             <h2>Department of Computer Science and Engineering</h2>
             <div id="line"></div>
@@ -21,7 +23,7 @@
 
     <div class="container">
         <aside class="sidebar">
-            
+            <%include sidebar.html %>
         </aside>
 
         <main class="content" style="overflow-y: none;">
@@ -68,10 +70,11 @@
         </main>
     </div>
 
+    <% include ../Footer/footer.html %>
 
 
 
-    <script src="addSidebar.js"></script>
+    <script src="../javascripts/CSE/addSidebarCSE.js"></script>
 
 </body>
 </html>

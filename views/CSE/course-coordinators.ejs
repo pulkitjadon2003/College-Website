@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department of Computer Science and Engineering</title>
 
-    <script src="script.js"></script>
 
     <style>
         body {
@@ -74,16 +73,15 @@
             color: #333333;
         }
     </style>
-    <link rel="stylesheet" href="academic.css">
-    <script src="/nav-enable.js"></script>
-    <script src="addSidebar.js"></script>
+    <link rel="stylesheet" href="/stylesheets/Academics/academic.css">
+    <script src="../javascripts/CSE/addSidebarCSE.js"></script>
 
 </head>
 <body>
-    <div id="nav-container"></div>
+    <%include ../Header/nav.html%>
 
     <div id="img">
-        <img src="../dunedin-university-of.jpg" alt="">
+        <img src="../images/CollegeImages/DSC_2295.JPG" alt="">
         <div id="nameDiv">
             <h2>Department of Computer Science and Engineering</h2>
             <div id="line"></div>
@@ -92,7 +90,7 @@
     </div>
     <div class="container">
         <aside class="sidebar">
-            
+            <% include sidebar.html  %>
         </aside>
         <main class="content">
 
@@ -143,7 +141,7 @@
      
         </main> 
     </div>
-    <div id="footer-container"></div>
+    <%include ../Footer/footer.html%>
 
 </body>
 </html>

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department of Computer Science and Engineering</title>
 
-    <script src="script.js"></script>
 
     <style>
         body {
@@ -114,16 +113,15 @@
         
 
     </style>
-    <link rel="stylesheet" href="academic.css">
-    <script src="/nav-enable.js"></script>
-    <script src="addSidebar.js"></script>
+    <link rel="stylesheet" href="/stylesheets/Academics/academic.css">
+    <script src="../javascripts/CSE/addSidebarCSE.js"></script>
 
 </head>
 <body>
-    <div id="nav-container"></div>
+    <%include ../Header/nav.html%>
 
     <div id="img">
-        <img src="../dunedin-university-of.jpg" alt="">
+        <img src="../images/CollegeImages/DSC_2295.JPG" alt="">
         <div id="nameDiv">
             <h2>Department of Computer Science and Engineering</h2>
             <div id="line"></div>
@@ -132,7 +130,8 @@
     </div>
     <div class="container">
         <aside class="sidebar">
-            
+            <% include sidebar.html  %>
+
         </aside>
         <main class="content">
             
@@ -140,21 +139,21 @@
                 
                 <div class="gallery-container">
                     <div class="gallery-item">
-                        <img src="./images/iNDUSTRIAL VISIT(INDIVAR COMPANY).jpg" alt="Picture 3">
+                        <img src="../images/CSE/iNDUSTRIAL VISIT(INDIVAR COMPANY).jpg" alt="Picture 3">
                         <div class="overlay">
                             <div class="text">Indivar Technologies</div>
                         </div>
                     </div>
 
                     <div class="gallery-item">
-                        <img src="./images/iNDUSTRIAL VISIT.jpg" alt="Picture 1">
+                        <img src="../images/CSE/iNDUSTRIAL VISIT.jpg" alt="Picture 1">
                         <div class="overlay">
                             <div class="text">Think Next</div>
                         </div>
                     </div>
 
                     <div class="gallery-item">
-                        <img src="./images/iNDUSTRIAL VISIT(SOLITAIRE INFOSYS) .jpg.png" alt="Picture 3">
+                        <img src="../images/CSE/iNDUSTRIAL VISIT(SOLITAIRE INFOSYS) .jpg.png" alt="Picture 3">
                         <div class="overlay">
                             <div class="text">Solitaire Infosys</div>
                         </div>
@@ -172,7 +171,7 @@
      
         </main> 
     </div>
-    <div id="footer-container"></div>
+    <%include ../Footer/footer.html%>
 
 </body>
 </html>

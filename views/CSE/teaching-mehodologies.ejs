@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department of Computer Science and Engineering</title>
-    <link rel="stylesheet" href="academic.css">
+    <link rel="stylesheet" href="/stylesheets/Academics/academic.css">
     <style>
         main{
             padding:2.5% !important;
@@ -27,12 +27,11 @@
     </style>
 </head>
 <body>
-    <script src="addSidebar.js"></script>
-    <script src="/nav-enable.js"></script>
+    <script src="../javascripts/CSE/addSidebarCSE.js"></script>
     
-    <div id="nav-container"></div>
+    <%include ../Header/nav.html%>
     <div id="img">
-        <img src="../dunedin-university-of.jpg" alt="">
+        <img src="../images/CollegeImages/DSC_2295.JPG" alt="">
         <div id="nameDiv">
             <h2>Department of Computer Science and Engineering</h2>
             <div id="line"></div>
@@ -42,7 +41,8 @@
 
     <div class="container">
         <aside class="sidebar">
-            
+            <% include sidebar.html  %>
+
         </aside>
 
         <main class="content" style="overflow-y: none;">
@@ -107,8 +107,7 @@
          </ol>
         </main>
     </div>
-    <div id="footer-container"></div>
+    <%include ../Footer/footer.html%>
 
-    <script src="script.js"></script>
 </body>
 </html>

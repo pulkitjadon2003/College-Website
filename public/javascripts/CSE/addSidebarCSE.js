@@ -1,13 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('sidebar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.querySelector('.sidebar').innerHTML = data
-            changeActivePage()
-        });
-
-        document.title = "Department of Computer Science and Engineering"
-        document.querySelector('#nameDiv h2').innerHTML = 'Department of Computer Science and Engineering '
+        
+        changeActivePage()
+        let pagetitle = "Department of Computer Science and Engineering"
+        document.title = pagetitle
+        document.querySelector('#nameDiv h2').innerHTML = pagetitle
 });
 
 function changeActivePage(params) {
@@ -20,6 +16,12 @@ function changeActivePage(params) {
             side.classList.add('active')  
         }
     })
+
+
+function loadPage(page) {
+        window.location.href = page;
+    }
+    
     
     
 }
