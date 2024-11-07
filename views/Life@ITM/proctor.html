@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proctor</title>
+    <link rel="stylesheet" href="/font.css">
+    <link rel="stylesheet" href="lifeITM.css">
+
+
+    <style> *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: gilroy;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .header {
+        color: white;
+        height: 45vh;
+        position: relative;
+        text-align: center;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 24px;
+        position: absolute;
+        bottom: 50%;
+        left: 40%;
+    
+        font-size: 3vmax;
+        font-weight: 500;
+        z-index: 5;
+    }
+    .header img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(70%);
+    }
+    .container{
+        position: relative;
+    }
+    .profile-card {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0px 4px 8px rgba(168, 147, 147, 0.1);
+    max-width: 850px;
+    margin-top: 30px;
+    position: absolute;
+   top: 10%;
+    left: 5%;
+    width: 100%;
+    
+  }
+  .profile-image {
+    border-radius: 50%;
+    width:150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    object-fit: cover; /* Keeps aspect ratio */
+    background-color: #ccc; /* Placeholder color */
+  }
+  .profile-info {
+    margin-left: 20px; /* Spacing between image and text */
+  }
+  .name {
+    font-size: 24px; /* Large text size */
+    font-weight: bold; /* Bold font weight */
+    color: #333; /* Dark grey color */
+  }
+  .role {
+    font-size: 18px; /* Medium text size */
+    color: #007bff; /* Blue color indicating interactivity/clickable item */
+  }
+  .email{
+    font-size: 18px; /* Medium text size */
+    /* color: #007bff;  */
+  }
+  .number{
+    font-size: 18px; /* Medium text size */
+    color: #007bff; 
+  }
+</style>
+</head>
+<body>
+  <div id="img">
+    <img src="./dunedin-university-of.jpg" alt="">
+    <div id="nameDiv">
+        <h2>Proctor</h2>
+        <div id="line"></div>
+
+    </div>
+</div>
+    <div class="container">
+    <div class="profile-card">
+        <img src="data:image/jpeg;base64,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" alt="Profile Image" class="profile-image">
+        <div class="profile-info">
+          <p class="name">Dr. Abhay Mishro</p>
+          <p class="role">Proctor</p>
+          <p class="email">abc12@gmail.com</p>
+          <p class="number">9089789089</p>
+        </div>
+        </div>
+</body>
+</html>

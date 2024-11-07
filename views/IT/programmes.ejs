@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science and Engineering</title>
+    <link rel="stylesheet" href="../stylesheets/Academics/academic.css">
+    <script src="../javascripts/IT/addSidebarIT.js"></script>
+</head>
+<style>
+    thead tr{
+        height: 2vh !important;
+    }
+
+    table {
+        height :unset;
+    }
+</style>
+<body>
+    <%include ../Header/nav.html%>
+
+    <div id="img">
+        <img src="../images/CollegeImages/New Reynolds Block.jpg" alt="">
+        <div id="nameDiv">
+            <h2></h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <% include sidebar.html %>
+
+            
+        </aside>
+        <main class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Programs</th>
+                    <th>No. of Seats</th>
+                    <th>Eligibility</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BTech - Information Technology</td>
+                    <td>90</td>
+                    <td>10+2 with PCM Group (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+                    <td>4 Years</td>
+               </tr>
+            </tbody>
+        </table>
+    </div>
+    <%include ../Footer/footer.html%>
+   
+</body>
+</html>

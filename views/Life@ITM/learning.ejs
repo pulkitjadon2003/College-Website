@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resource Centre</title>
+    <link rel="stylesheet" href="../stylesheets/Life@ITM/lifeITM.css">
+
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        #content {
+            width: 95%;
+            padding: .2rem 5rem;
+
+
+        }
+
+        #section2,
+        #section1 {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0 0 10px;
+        }
+
+        #section1 h3 {
+            color: rebeccapurple;
+        }
+
+        #section1 p {
+            max-width: 90%;
+            text-align: justify;
+            margin-left: 5%;
+            font-size: 16px;
+            line-height: 150%;
+        }
+        #section1 img{
+            height: 400px;
+            width: 850px;
+            padding: 20px;
+            margin: 37px 58px;
+        }
+
+        .article {
+            font-size: 18px;
+            margin: 15px;
+            line-height: 1.3;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rebeccapurple;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <%include ../Header/nav.html%>
+    <div id="img">
+        <img src="../images/Life@ITM/Learning.jpg" alt="">
+        <div id="nameDiv">
+            <h2>Learning Resource Centre</h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+
+    <div id="content">
+        <section id="section1">
+            <h1>Akshardham Central Library</h1>
+            <h3>About Department
+            </h3>
+            <p>Akshardham Central Library occupies a place of pride in ITM Gwalior and is an essential component of the
+                Institute's outstanding research and education mission. It serves as a creative and innovative partner
+                in supporting teaching, learning, and research activities of the Institute. The pleasant ambience and
+                the well-furnished library with spacious reading rooms create an atmosphere of serenity. It is the most
+                lively place on the campus providing a conducive environment that enables learning and advancement of
+                knowledge and promotes discovery.
+                <br>
+                The Central Library has a rich collection of Books, Journals Engineering & Technology and Management,
+                Magazines, Reference Books, Novel, Fiction & Video's of IIT Lecture.
+            </p>
+            <img src="../images/Life@ITM/library.jpg" alt="">
+        </section>
+        <section id="section1" style="display:flex;justify-content: space-around;">
+            <p>
+            <h3 style="left:14%">FEATURES
+            </h3>
+
+            <ul style="padding-top:29px ;">
+                <li>Books </li>
+                <li>Journals</li>
+                <li>
+
+                    Reference Sources
+                </li>
+                <li>
+
+                    Novels & Fiction
+                </li>
+                <li>
+
+                    Newspapers & Magazines
+                </li>
+                <li>
+
+                    Question Paper
+                </li>
+                <li> Videos of IIT Lecturer</li>
+            </ul>
+            </p>
+
+            <p>
+            <h3 style="position: absolute;left:55%">LIBRARY SERVICES
+
+            </h3>
+
+            <ul style="padding-top:29px ;">
+                <li>Orientation Programme
+                </li>
+                <li>Information Literacy</li>
+                <li>
+
+                    User Education
+                </li>
+                <li>
+
+                    Reference and Information Service
+                </li>
+                <li>
+
+                    Electronic Database and Online - Journals
+                </li>
+                <li>
+
+                    Digital Archiving
+                </li>
+                <li>OPAC (Online Public Access Catalogue)</li>
+                <li>Internet Facility</li>
+                <li>Current Awareness Service</li>
+                <li>Lending Service</li>
+                <li>Extension Service</li>
+                <li>Reprographic Service</li>
+            </ul>
+            </p>
+        </section>
+        <section id="section1">
+            <div class="container" style="width: 75%;">
+                <table class="loan-privileges">
+                    <caption>Loan Privileges</caption>
+                    <thead>
+                        <tr>
+                            <th>Item Category</th>
+                            <th>Borrowers Type</th>
+                            <th>No. of Books</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Books</td>
+                            <td>Faculty Members</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Non-Teaching Staff</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>PG Students</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>UG Students</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container" style="width: 75%;">
+                <table class="library-team">
+                    <caption>Library Team</caption>
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name</th>
+                            <th>Contact No</th>
+                            <th>Email id</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Mr. Vikas Dwivedi (Dy.Librarian)</td>
+                            <td>8425771913</td>
+                            <td>headcentrallibrary@tmggoi.in</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2.</td>
+                            <td>Ms. Neetu Gupta (Asst.Librarian)</td>
+                            <td>7416937454</td>
+                            <td>neetu.gupta@tmggoi.in</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Mr. Dinesh Mathur (Library Asst.)</td>
+                            <td>9920847949</td>
+                            <td>Dineshmathur.lib@tmggoi.in</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Mr. Soheb Khan (Library Attendant)</td>
+                            <td>9977486342</td>
+                            <td>sohebkhan2911@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Mr. Laxmi Narayan (Book Lifter)</td>
+                            <td>8802752483</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+        <section id="section1">
+            <h3>Digital Library</h3>
+            <p>
+
+                The institute has a well equipped digital library consisting of 25 PC nodes. All these nodes have access
+                to the Internet through a 100 MBPS leased line.
+            </p>
+        </section>
+        <section id="section1" style="display: flex;flex-direction: column;">
+            <div class="lib" style="height: auto; width: 100%;display:flex; justify-content: space-between;">
+
+
+                <p>
+                <h3 style="position: absolute;left:6%">Online Courses
+                </h3>
+    
+                <ul style="padding-top:29px ;">
+                    <li>Swayam</li>
+                    <li>NPTEL</li>
+                    <li>Infolport</li>
+                    <li>UG/PG MOOCs</li>
+                    <li>MIT Open Courseware</li>
+                    <li>e-PG Pathshala</li>
+                    <li>e-Content courseware in UG subjects</li>
+                </ul>
+    
+                </p>
+                <p>
+    
+                <h3 style="position: absolute;left:30.5%">E-Journals</h3>
+                <ul style="padding-top:29px ;width: 25%;">
+                    <li>Oxford Open</li>
+                    <li>e-Shodh Sindhu</li>
+                    <li>Directory of Open Access Journals</li>
+                    <li>Cambridge University Press</li>
+                    <li>Science Direct Open Access</li>
+                    <li>Springer Open Journals</li>
+                    <li>Taylor & Francis Open Access</li>
+                    <li>Wiley Open Access Journals</li>
+                </ul>
+                </p>
+                <p>
+                    <h3 style="position: absolute;left:53.5%">Magazines
+                    </h3> 
+         
+                    <ul style="padding-top:29px ;width: 25%;">
+                        <li>India Today</li>
+                        <li>Digit</li>
+                        <li>EYE(Electronics For You)</li>
+                        <li>Outlook, Business World</li>
+                        <li>Dataquest</li>
+                        <li>Business World</li>
+                        <li>C.Quest</li>
+                        <li>Overdrive</li>
+                        <li>Pratiyogita Darpan</li>
+                        <li>Competition Success Review</li>
+                    </ul>
+         
+                    </p>
+               
+    
+                <p>
+    
+                <h3 style="position: absolute;left:76.5%">Digital Library</h3>
+                <ul style="padding-top:29px ;width: 25%;">
+                    <li>National Digital Library</li>
+                    <li>National Knowledge Network</li>
+                    <li>Talks to Teacher</li>
+                    <li>A-VIEW</li>
+                    <li>Virtual Labs</li>
+                    <li>FOSSEE</li>
+                    <li>E-Kalpa</li>
+                    <li>e-Yantra</li>
+                    <li>ILOSTAT</li>
+                    <li>Project Euclid</li>
+                </ul>
+                </p>
+            </div>
+
+
+           <div class="lib"style="height: auto; width: 100%;display:flex; justify-content: space-between; margin-top:50px;">
+               
+               <p>
+               <h3 style="position: absolute;left:6%">News Paper
+               </h3>
+    
+               <ul style="padding-top:29px ; width: 30%;">
+                   <li>The Hindustan Times</li>
+                   <li>Indian Express</li>
+                   <li>The Times of India</li>
+                   <li>The Hindu</li>
+                   <li>The Economic Times</li>
+                   <li>Business Standard</li>
+                   <li>The Financial Express</li>
+               </ul>
+    
+               </p>
+               <p>
+               <h3 style="position: absolute;left:31%">Thesis and Dissertations
+               </h3>
+    
+               <ul style="padding-top:29px ;width: 30%;">
+                   <li>E-Shodhganga – Indian Thesis</li>
+                   <li>Networked Digital Library of Thesis and Dissertations (NDLTD)</li>
+                   <li>Open Access Thesis & Dissertations</li>
+               </ul>
+    
+               </p>
+
+    
+             
+    
+               <p>
+               <h3 style="position: absolute;left:78.5%">Online Courses
+               </h3>
+    
+               <ul style="padding-top:29px ;">
+                   <li>Swayam</li>
+                   <li>NPTEL</li>
+                   <li>Infolport</li>
+                   <li>UG/PG MOOCs</li>
+                   <li>MIT Open Courseware</li>
+                   <li>e-PG Pathshala</li>
+                   <li>e-Content courseware in UG subjects</li>
+               </ul>
+    
+               </p>
+               <p>
+    
+                <h3 style="position: absolute;left:56%">E-Books</h3>
+                <ul style="padding-top:29px ;">
+                    <li>E-Books</li>
+                    <li>Directory of Open Access Books</li>
+                    <li>Open Textbook Library</li>
+                </ul>
+                </p>
+           </div>
+            
+
+            
+
+
+        </section>
+
+
+
+    </div>
+    <%include ../Footer/footer.html%>
+
+
+
+</body>
+
+</html>

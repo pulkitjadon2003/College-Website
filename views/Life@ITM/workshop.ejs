@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop</title>
+    <link rel="stylesheet" href="../stylesheets/Life@ITM/lifeITM.css">
+
+
+
+
+    <style>
+       
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: gilroy;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+   
+    .container{
+        position: relative;
+        padding: 2vh 3vw;
+        margin-bottom: 5%;
+    }
+  
+    .sports{
+        font-size: 18px;
+        margin: 15px;
+        line-height: 1.3;
+        /* background-color: antiquewhite; */
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+   .sports h3{
+    color: #503091;
+   }
+   .sports p{
+    text-align: justify;
+   }
+   .gallery-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    padding: 10px;
+}
+/* .section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+} */
+
+.section {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 5%;
+        }
+
+        .container h2 {
+            margin-top: 30px;
+            background-color: rebeccapurple;
+            padding: 20px;
+            color: white;
+            text-align: center;
+
+        }
+
+        .container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .container table,
+        .container th,
+        .container td {
+            border: 1px solid #ddd;
+        }
+
+        .container th,
+        .container td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        .container th {
+            background-color: rebeccapurple;
+            color: white;
+        }
+
+        .container td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .container td a:hover {
+            text-decoration: underline;
+        }
+        .container object{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <%include ../Header/nav.html%>
+   <div id="img">
+        <img src="../images/Life@ITM/Workshop.jpg" alt="">
+        <div id="nameDiv">
+            <h2>Workshop</h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="sports">
+            <h3>Workshops</h3>
+            <p> Welcome to the Workshops page for ITM GOI Gwalior! Our workshops are designed to provide hands-on learning experiences that complement classroom education, enabling students to deepen their technical and professional skills. With a focus on industry-relevant topics, we aim to foster innovation, creativity, and practical knowledge through interactive sessions led by experts. Whether you're looking to enhance your technical expertise or explore new career paths, our workshops offer valuable insights and opportunities for growth.</p>
+            
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/work1 (1).jpg" alt="Picture 1">
+                <div class="overlay">
+                    <!-- <div class="text">Medical Wards</div> -->
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/work1 (2).jpg" alt="Picture 2">
+                <div class="overlay">
+                    <!-- <div class="text">Minor OT</div> -->
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/work1 (3).jpg" alt="Picture 3">
+                <div class="overlay">
+                    <!-- <div class="text">Doctor visit</div> -->
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/work1 (4).jpg" alt="Picture 1">
+                <div class="overlay">
+                    <!-- <div class="text">Staff</div> -->
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/work1 (5).jpg" alt="Picture 2">
+                <div class="overlay">
+                    <!-- <div class="text">Doctor's Cabin</div> -->
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/work1 (6).jpg" alt="Picture 3">
+                <div class="overlay">
+                    <!-- <div class="text">General Wards</div> -->
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="section">
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Downloads</th>
+                   
+                </tr>
+
+                <tr>
+                    <td>Total number of workshops/
+                        seminars/ conferences (2023-24)  </td>
+                    <td><a href="../docs/Life@ITM/3.2.2_2023-24_Workshops.pdf" download="workshop.pdf">Download File</a></td>
+                   
+                </tr>
+                <tr>
+                    <td>Total number of workshops/
+                        seminars/ conferences (2022-23) </td>
+                    <td><a href="../docs/Life@ITM/3.2.2_2022-23_Workshops.pdf" download="workshop.pdf">Download File</a></td>
+                   
+                </tr>
+                <tr>
+                    <td>Total number of workshops/
+                        seminars/ conferences (2021-22) </td>
+                    <td><a href="../docs/Life@ITM/3.2.2_2021-22_Workshops.pdf" download="workshop.pdf">Download File</a></td>
+                    
+                </tr>
+                <tr>
+                    <td>Total number of workshops/
+                        seminars/ conferences (2020-21) </td>
+                    <td><a href="../docs/Life@ITM/3.2.2_2020-21_Workshops.pdf" download="workshop.pdf">Download File</a></td>
+                   
+                </tr>
+                <tr>
+                    <td>Total number of workshops/
+                        seminars/ conferences (2019-20) </td>
+                    <td><a href="../docs/Life@ITM/3.2.2_2019-20_Workshops.pdf" download="workshop.pdf">Download File</a></td>
+                    
+                </tr>
+            </table>
+
+        </div>
+
+
+        
+
+        
+    </div>
+
+  
+  
+    <%include ../Footer/footer.html%>
+    
+</body>
+</html>

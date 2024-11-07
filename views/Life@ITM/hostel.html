@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Information</title>
+    <link rel="stylesheet" href="/font.css">
+    <link rel="stylesheet" href="lifeITM.css">
+
+
+    <style>
+body {
+    font-family: gilroy;
+    background-color: #f4f4f4;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.hostel-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 0 2vw;
+}
+
+.hostel-header {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.hostel-header h2 {
+    margin: 0;
+    color: #333;
+    border-left: 5px solid #dc143c;
+    padding-left: 10px;
+}
+
+.hostel-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.info-column {
+    width: 60%;
+}
+
+.info-column table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-column th, .info-column td {
+    text-align: left;
+    padding: 8px;
+}
+
+.info-column th {
+    width: 50%;
+    background-color: #f8f8f8;
+}
+
+.hostel-image {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hostel-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hostel-facilities {
+    padding: 15px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.hostel-facilities h3 {
+    margin-top: 0;
+    color: #333;
+    border-left: 5px solid #dc143c;
+    padding-left: 10px;
+}
+
+.hostel-facilities ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.hostel-facilities ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.hostel-facilities ul li:before {
+    content: "\279C";
+    position: absolute;
+    left: 0;
+    color: #009688;
+}
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    padding: 2vh 5vw;
+    margin-bottom: 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #1a2d6d;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1a2d6d;
+    padding-bottom: 10px;
+}
+
+.calendar-section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.calendar-button, .view-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.calendar-button {
+    background-color: #f2c20c;
+    color: #1a2d6d;
+    font-weight: bold;
+}
+
+.view-button {
+    background-color: #007bff;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #f2c20c;
+}
+
+table th, table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+.header {
+    color: white;
+    height: 45vh;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+
+    font-size: 3vmax;
+    font-weight: 500;
+    z-index: 5;
+}
+.header img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(70%);
+}
+
+
+    </style>
+    <script src="/nav-enable.js"></script>
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div id="img">
+        <img src="./dunedin-university-of.jpg" alt="">
+        <div id="nameDiv">
+            <h2>Hostel </h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+    <div class="hostel-container">
+        <div class="hostel-header">
+            <h2>Hostel No-6 Girls Hostels</h2>
+        </div>
+        <div class="hostel-info">
+            <div class="info-column">
+                <table>
+                    <tr>
+                        <th>Total Accommodation</th>
+                        <td>232</td>
+                    </tr>
+                    <tr>
+                        <th>Hostel Warden</th>
+                        <td>Ms. Sapna Kumari</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="hostel-image">
+                <img src="data:image/jpeg;base64,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" alt="Hostel No-6 Image">
+            </div>
+        </div>
+        <div class="hostel-facilities">
+            <h3>Hostel Facilities</h3>
+            <ul>
+                <li>Mess Facility</li>
+                <li>24x7 CCTV security</li>
+                <li>Security Guards</li>
+                <li>Recreation Hall</li>
+                <li>Sport Facilities</li>
+                <li>Internet Facilities</li>
+                <li>Guest Rooms</li>
+                <li>Generator Facility</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hostel-container">
+        <div class="hostel-header">
+            <h2>Hostel No-7 Boys Hostel</h2>
+        </div>
+        <div class="hostel-info">
+            <div class="info-column">
+                <table>
+                    <tr>
+                        <th>Total Accommodation</th>
+                        <td>[Data]</td>
+                    </tr>
+                    <tr>
+                        <th>Hostel Warden</th>
+                        <td>[Data]</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="hostel-image">
+                <img src="https://alagujothiacademy.in/wp-content/uploads/2022/05/hostel.jpg" alt="Hostel No-7 Image">
+            </div>
+        </div>
+        <div class="hostel-facilities">
+            <h3>Hostel Facilities</h3>
+            <ul>
+                <ul>
+                    <li>Mess Facility</li>
+                    <li>24x7 CCTV security</li>
+                    <li>Security Guards</li>
+                    <li>Recreation Hall</li>
+                    <li>Sport Facilities</li>
+                    <li>Internet Facilities</li>
+                    <li>Guest Rooms</li>
+                    <li>Generator Facility</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Tittle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Hostel Resident Rules and Regulations</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Hostel Resident Rules and Regulations</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Hostel Resident Rules and Regulations</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Hostel Resident Rules and Regulations</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Hostel Resident Rules and Regulations</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div id="footer-container"></div>
+
+</body>
+</html>

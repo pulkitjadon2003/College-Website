@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            height: auto;
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            
+        }
+
+
+        
+        th {
+            background-color: #007BFF;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        tr td{
+            text-align: left  ;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        th, td {
+            border-bottom: 1px solid #dddddd;
+            text-align: left;
+        }
+
+        th:first-child, td:first-child {
+            border-left: 1px solid #dddddd;
+        }
+        th:nth-last-child(4th), td:last-child {
+            border-right: 1px solid #dddddd;
+            text-align: center;
+            background-color: rgb(153, 51, 59);
+        }
+
+
+        th:last-child, td:last-child {
+            border-right: 1px solid #dddddd;
+            text-align: center;
+        }
+
+        caption {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333333;
+        }
+    </style>
+    <link rel="stylesheet" href="../stylesheets/Academics/academic.css">
+    <script src="../javascripts/EC/addSidebarEC.js"></script>
+
+</head>
+<body>
+  <%include ../Header/nav.html%>
+
+    <div id="img">
+      <img src="../images/CollegeImages/New Reynolds Block.jpg" alt="">
+      <div id="nameDiv">
+            <h2></h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+          <% include sidebar.html %>
+
+        </aside>
+        <main class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Name of Faculty</th>
+                        <th>Nature of the Program</th>
+                        <th>Topic</th>
+                        <th>Organized By</th>
+                        <th>Days & Duration</th>
+                        <th>Approved By</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Prof. Manoj K Bandil</td>
+                        <td>International Conference</td>
+                        <td>Pervasive Computing Advances & Applications (PerCAA-2019)</td>
+                        <td>Poornima University</td>
+                        <td>3 Days</td>
+                        <td>RGPV Bhopal</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Prof. Manoj K Bandil</td>
+                        <td>STC</td>
+                        <td>Bioelectric signal & medical imaging: post processing & clinical application</td>
+                        <td>M.I.T.S. Gwalior</td>
+                        <td>Two week</td>
+                        <td>TEQIP-II</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Prof. Manoj K Bandil</td>
+                      <td>STTP</td>
+                      <td>Emerging Issues of VLSI Design</td>
+                      <td>Department of EC, (SOET), ITM University Gwalior</td>
+                      <td>5 days</td>
+                      <td>RGPV</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Prof. Manoj K Bandil</td>
+                      <td>STTP</td>
+                      <td>Emerging Issues of VLSI Design</td>
+                      <td>Department of EC, (SOET), ITM University Gwalior</td>
+                      <td>5 days</td>
+                      <td>RGPV</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Prof. Manoj K Bandil</td>
+                      <td>STTP</td>
+                      <td>Emerging Issues of VLSI Design</td>
+                      <td>Department of EC, (SOET), ITM University Gwalior</td>
+                      <td>5 days</td>
+                      <td>RGPV</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Prof. Manoj K Bandil</td>
+                      <td>FDP</td>
+                      <td>Cyber Security</td>
+                      <td>ITM Gwalior</td>
+                      <td>3 days</td>
+                      <td>RGPV</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Prof. Manoj K Bandil</td>
+                      <td>TTP</td>
+                      <td>Teacher Training Program (TTP), (RGPV), Bhopal</td>
+                      <td>ITM Gwalior</td>
+                      <td>5 days</td>
+                      <td>RGPV</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Prof. Manoj K Bandil</td>
+                      <td>TTP</td>
+                      <td>Teacher Training Program (TTP), (RGPV), Bhopal</td>
+                      <td>ITM Gwalior</td>
+                      <td>5 days</td>
+                      <td>RGPV</td>
+                    </tr> 
+                       
+                    <tr>
+                      <td>9</td>
+                      <td>Prof. Manoj K Bandil</td>
+                      <td>FPD-ATAL</td>
+                      <td>Signal Processing for Cognitive Neuroscience Applications</td>
+                      <td>National Institute of Technology Meghalaya</td>
+                      <td>5 Days</td>
+                      <td>ATAL</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Prof. Manoj K Bandil</td>
+                      <td>FPD-ATAL</td>
+                      <td>Advanced Manufacturing of Biomedical Devices for Precision Health Technologies</td>
+                      <td>Indian Institute of Technology Tirupati</td>
+                      <td>5 Days</td>
+                      <td>ATAL</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>Prof. Shushant Kumar Jain</td>
+                      <td>FDP</td>
+                      <td>Artificial Intelligence (ATAL)</td>
+                      <td>Ramakrishna Mission Vivekananda Educational and Research Institute</td>
+                      <td>5 Days</td>
+                      <td>ATAL</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>Prof. Shushant Kumar Jain</td>
+                      <td>FDP</td>
+                      <td>Computer Science & Biology (ATAL)</td>
+                      <td>LAKSHMI NARAIN COLLEGE OF TECHNOLOGY</td>
+                      <td>5 Days</td>
+                      <td>ATAL</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>Prof. Shushant Kumar Jain</td>
+                      <td>FDP</td>
+                      <td>Internet of Things (IoT) (ATAL)</td>
+                      <td>SIKSHA O ANUSANDHAN</td>
+                      <td>5 Days</td>
+                      <td>ATAL</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>Prof. Shushant Kumar Jain</td>
+                      <td>Elsevier Certificate</td>
+                      <td>The journal publishing cycle (Elsevier Certificate)</td>
+                      <td>Elsevier</td>
+                      <td>1 Day</td>
+                      <td>Elsevier</td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>Prof. Shushant Kumar Jain</td>
+                      <td>Elsevier Certificate</td>
+                      <td>Structuring your article correctly (Elsevier Certificate)</td>
+                      <td>Elsevier</td>
+                      <td>1 Day</td>
+                      <td>Elsevier</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>Prof. Shushant Kumar Jain</td>
+                      <td>Elsevier Certificate</td>
+                      <td>How to write an abstract and improve your article (Elsevier Certificate)</td>
+                      <td>Elsevier</td>
+                      <td>1 Day</td>
+                      <td>Elsevier</td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td>Prof. Shushant Kumar Jain</td>
+                      <td>Webinar (Expert Lecture)</td>
+                      <td>Automotive Embedded Systems</td>
+                      <td>Amity School of Engineering and Technology (ASET), Amity University, Madhya Pradesh (AUMP), Gwalior</td>
+                      <td>1 Day</td>
+                      <td>ASET</td>
+                    </tr>
+
+                    <td>18</td>
+    <td>Prof. Shushant Kumar Jain</td>
+    <td>Workshop</td>
+    <td>The Growing Role of IoT in Covid-19 and Health Care</td>
+    <td>Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal with Department of Information Technology, Shri G. S. Institute of Technology & Science, Indore (M.P.) in association with WILEY India Pvt. Ltd.</td>
+    <td>3 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Prof. Shushant Kumar Jain</td>
+    <td>FDP</td>
+    <td>VLSI Chip design hands on using open source EDA</td>
+    <td>ITM University, Gwalior</td>
+    <td>5 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Prof. Shushant Kumar Jain</td>
+    <td>Certificate Course</td>
+    <td>Single Board Heater System</td>
+    <td>Spoken Tutorial Project, IIT Bombay</td>
+    <td>3 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Prof. Shushant Kumar Jain</td>
+    <td>NPTEL Certificate Course</td>
+    <td>Digital Circuits</td>
+    <td>NPTEL</td>
+    <td>12 Weeks</td>
+    <td>NPTEL</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Prof. Sourabh Sharma</td>
+    <td>FDP</td>
+    <td>Student Induction</td>
+    <td>ITM Gwalior</td>
+    <td>3 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Prof. Sourabh Sharma</td>
+    <td>National Seminar</td>
+    <td>Recent innovation in signal processing and embedded systems</td>
+    <td>ITM Gwalior</td>
+    <td>3 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Prof. Sourabh Sharma</td>
+    <td>FDP</td>
+    <td>Recent Trends of Control Systems in Power Electronics Converter</td>
+    <td>National Institute of Technology Manipur</td>
+    <td>5 Days</td>
+    <td>ATAL</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Prof. Sourabh Sharma</td>
+    <td>FDP</td>
+    <td>Artificial Intelligence on System on Chip (SoC)</td>
+    <td>Indraprastha Institute of Information Technology, Delhi (IIIT Delhi)</td>
+    <td>5 Days</td>
+    <td>ATAL</td>
+  </tr>
+
+  
+  <tr>
+    <td>26</td>
+    <td>Prof. Sourabh Sharma</td>
+    <td>FDP</td>
+    <td>Sensors Technology</td>
+    <td>Maharaja Ranjit Singh Punjab Technical University Batdinda.</td>
+    <td>5 day</td>
+    <td>ATAL</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Prof. Sourabh Sharma</td>
+    <td>FDP</td>
+    <td>Internet of tdings (IoT)</td>
+    <td>Mizoram University.</td>
+    <td>5 day</td>
+    <td>ATAL</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Prof. Sourabh Sharma</td>
+    <td>FDP</td>
+    <td>Blended Learning Flipped Classroom</td>
+    <td>Sardar Vallabhbhai National Institute of Technology Surat.</td>
+    <td>5 day</td>
+    <td>ATAL</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Prof. Kapil Jain</td>
+    <td>FDP</td>
+    <td>Robotics & Automation (TEQIP-III)</td>
+    <td>MLVTEC, Bhilwara</td>
+    <td>05 Days</td>
+    <td>TEQIP-III</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Prof. Kapil Jain</td>
+    <td>FDP</td>
+    <td>Design of Experiment using TAGUCHI Techniques (TEQIP-III)</td>
+    <td>Rajastdan Technical University, Kota</td>
+    <td>05 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Prof. Kapil Jain</td>
+    <td>FDP</td>
+    <td>Learner Oriented Teaching Metdods</td>
+    <td>IPS, Gwalior</td>
+    <td>05 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Prof. Kapil Jain</td>
+    <td>STTP</td>
+    <td>Emerging Issues of VLSI</td>
+    <td>ITM, Gwalior</td>
+    <td>05 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Prof. Mangesh Singh Tomar</td>
+    <td>FDP</td>
+    <td>Recent Trends of Control Systems in Power Electronics Converter</td>
+    <td>National Institute of Technology Manipur</td>
+    <td>5 day</td>
+    <td>ATAL</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Prof. Mangesh Singh Tomar</td>
+    <td>FDP</td>
+    <td>Artificial Intelligence on System on Chip (SoC)</td>
+    <td>Indraprastda Institute of Information Technology, Delhi (IIIT Delhi)</td>
+    <td>5 day</td>
+    <td>ATAL</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Prof. Mangesh Singh Tomar</td>
+    <td>STTP</td>
+    <td>Emerging Issues of VLSI Design</td>
+    <td>ITM University Gwalior</td>
+    <td>5 day</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Prof. Mangesh Singh Tomar</td>
+    <td>STTP</td>
+    <td>Emerging Issues of VLSI Design</td>
+    <td>ITM University Gwalior</td>
+    <td>5 day</td>
+    <td>AICTE</td>
+  </tr>
+
+  <tr>
+    <td>37</td>
+    <td>Prof. Mangesh Singh Tomar</td>
+    <td>STTP</td>
+    <td>Emerging Issues of VLSI Design</td>
+    <td>ITM University Gwalior</td>
+    <td>5 day</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Prof. Mangesh Singh Tomar</td>
+    <td>FDP</td>
+    <td>3 day online FDP under TEQIP-III, RGPV, Bhopal</td>
+    <td>ITM, Gwalior</td>
+    <td>3 day</td>
+    <td>TEQIP-III</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Prof. Vineet Shrivastava</td>
+    <td>FDP</td>
+    <td>Learner Oriented Teaching Metdods</td>
+    <td>IPS, Gwalior</td>
+    <td>7 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Prof. Vineet Shrivastava</td>
+    <td>FDP</td>
+    <td>Program Design concepts based on OBE. Criterion 1 of NAAC</td>
+    <td>INPODS ED-Tech</td>
+    <td>1 Day</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Prof. Vineet Shrivastava</td>
+    <td>Work Shop</td>
+    <td>Robotics & Automation</td>
+    <td>M.L.V.T.E.C. Bhilwara</td>
+    <td>5 Days</td>
+    <td>TEQIP-3</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Prof. Vineet Shrivastava</td>
+    <td>STTP</td>
+    <td>Emerging Issues of VLSI Design</td>
+    <td>ITM University Gwalior</td>
+    <td>5 day</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>Prof. Vineet Shrivastava</td>
+    <td>STTP</td>
+    <td>Emerging Issues of VLSI Design</td>
+    <td>ITM University Gwalior</td>
+    <td>5 day</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Prof. Vineet Shrivastava</td>
+    <td>STTP</td>
+    <td>Emerging Issues of VLSI Design</td>
+    <td>ITM University Gwalior</td>
+    <td>5 day</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Prof. Vineet Shrivastava</td>
+    <td>STTP</td>
+    <td>Emerging Issues of VLSI Design</td>
+    <td>ITM University Gwalior</td>
+    <td>5 day</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Prof. Vineet Shrivastava</td>
+    <td>TTP</td>
+    <td>Low power VLSI design and Verification</td>
+    <td>ITM GOI</td>
+    <td>5 Days</td>
+    <td>TEQIP-III, RGPV Bhopal</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Prof. Vineet Shrivastava</td>
+    <td>TTP</td>
+    <td>Machine Learning and Artificial Intelligence by Using Pytdon</td>
+    <td>ITM GOI</td>
+    <td>5 Days</td>
+    <td>TEQIP-III, RGPV Bhopal</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>FDP</td>
+    <td>Industry 4.0</td>
+    <td>Chennai Institute of Technology</td>
+    <td>5 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>FDP</td>
+    <td>Internet of tdings (IoT)</td>
+    <td>Sri Manakula Vinayagar Engineering College</td>
+    <td>5 Days</td>
+    <td>AICTE</td>
+  </tr>
+
+  <tr>
+    <td>50</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>FDP</td>
+    <td>Cyber Security</td>
+    <td>Coimbatore Institute of Technology</td>
+    <td>5 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>FDP</td>
+    <td>Internet of tdings (IoT)</td>
+    <td>Model Engineering College</td>
+    <td>5 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>STTP</td>
+    <td>Emerging Issues on VLSI Design</td>
+    <td>ITM University</td>
+    <td>6 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>STTP</td>
+    <td>Emerging Issues on VLSI Design</td>
+    <td>ITM University</td>
+    <td>6 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>STTP</td>
+    <td>Emerging Issues on VLSI Design</td>
+    <td>ITM University</td>
+    <td>6 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>STTP</td>
+    <td>Emerging Issues on VLSI Design</td>
+    <td>ITM University</td>
+    <td>6 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>FDP</td>
+    <td>IIoT & ROBOTICS</td>
+    <td>National Institute of Technical Teachers Training & Research</td>
+    <td>6 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>FDP</td>
+    <td>RM & IPR</td>
+    <td>ITM University</td>
+    <td>14 Day</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>STTP</td>
+    <td>Electric Vehicles</td>
+    <td>LNCT Bhopal</td>
+    <td>6 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>FDP</td>
+    <td>Student Induction (FDP-SI)</td>
+    <td>ITM GOI</td>
+    <td>3 Days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>TTP</td>
+    <td>ML & AI</td>
+    <td>ITM GOI</td>
+    <td>5 Days</td>
+    <td>TEQIP-3</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>Prof. Rajkumar Rajoria</td>
+    <td>TTP</td>
+    <td>VLSI Design</td>
+    <td>ITM GOI</td>
+    <td>5 Days</td>
+    <td>TEQIP-3</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Prof. Rachit Jain</td>
+    <td>FDP</td>
+    <td>Algoritdms and Techniques for Signal Processing</td>
+    <td>Manipur Technical University (MTU), Imphal</td>
+    <td>5 days</td>
+    <td>TEQIP-III</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Prof. Rachit Jain</td>
+    <td>STTP</td>
+    <td>Optimal Operation of Power System incorporating Renewable Energy Sources</td>
+    <td>Sagar Institute of Research And Technology, Bhopal</td>
+    <td>5 days</td>
+    <td>AICTE</td>
+  
+  </tr>
+
+  <tr>
+    <td>64</td>
+    <td>Prof. Rachit Jain</td>
+    <td>STTP</td>
+    <td>Design of Miniature Antenna for 5G and IoT Applications</td>
+    <td>MVGR College of Engineering (A), Vizianagaram</td>
+    <td>5 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Prof. Rachit Jain</td>
+    <td>STTP</td>
+    <td>Recent Advancements of Computational Electromagnetics in Modern Microwave Antennas</td>
+    <td>Sri Venkateswara College of Engineering, Sriperumbudur</td>
+    <td>6 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Prof. Rachit Jain</td>
+    <td>Workshop</td>
+    <td>Robotics & Automation</td>
+    <td>M.L.V.T.E.C. Bhilwara</td>
+    <td>5 days</td>
+    <td>TEQIP-III</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>Prof. Rachit Jain</td>
+    <td>FDP</td>
+    <td>Internet of tdings (IoT)</td>
+    <td>Cochin University of Science and Technology</td>
+    <td>5 days</td>
+    <td>ATAL</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Prof. Rachit Jain</td>
+    <td>STTP</td>
+    <td>Emerging Issues of VLSI Design</td>
+    <td>ITM University, Gwalior</td>
+    <td>5 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Prof. Rachit Jain</td>
+    <td>STTP</td>
+    <td>Recent Trends and Future Applications</td>
+    <td>IIT Indore</td>
+    <td>5 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>Prof. Rachit Jain</td>
+    <td>FDP</td>
+    <td>Learner Oriented Teaching Metdods</td>
+    <td>IPS, Gwalior</td>
+    <td>7 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>Prof. Rachit Jain</td>
+    <td>FDP</td>
+    <td>Advanced Electromagnetics and Applications</td>
+    <td>Sri Sivasubramaniya Nadar College of Engineering, Chennai</td>
+    <td>5 days</td>
+    <td>TEQIP-III, RGPV Bhopal</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>Prof. Rachit Jain</td>
+    <td>FDP</td>
+    <td>Recent Trendy Antenna Design and Analysis Using EM Solver</td>
+    <td>tde Institutions of Engineers, Trunelveli</td>
+    <td>5 days</td>
+    <td>TEQIP-III, RGPV Bhopal</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td>Prof. Rachit Jain</td>
+    <td>FDP</td>
+    <td>Antenna & Microwave Engineering</td>
+    <td>K Ramakrishnan College of Technology, Tiruchirappali</td>
+    <td>5 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>Prof. Rachit Jain</td>
+    <td>FDP</td>
+    <td>3D EM Simulation Using CST STUDIO SUITE</td>
+    <td>KLEF, Guntur</td>
+    <td>5 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td>Prof. Rachit Jain</td>
+    <td>FDP</td>
+    <td>Improving Teaching Learning Experience Using Best Practices</td>
+    <td>Dwarkadas Jivanlal Sanghvi College of Engineering, Mumbai</td>
+    <td>5 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td>Prof. Rachit Jain</td>
+    <td>FDP</td>
+    <td>E-Learning</td>
+    <td>Pratdyusha Engineering College, Chennai</td>
+    <td>4 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>Prof. Rachit Jain</td>
+    <td>FDP</td>
+    <td>IoT witd Artificial Intelligence</td>
+    <td>Sir C R Reddy College of Engineering, Eluru</td>
+    <td>3 days</td>
+    <td>AICTE</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>Prof. Rachit Jain</td>
+    <td>TTP</td>
+    <td>Low Power VLSI Design and Verification</td>
+    <td>ITM GOI</td>
+    <td>5 days</td>
+    <td>TEQIP-III, RGPV Bhopal</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Prof. Rachit Jain</td>
+    <td>TTP</td>
+    <td>Machine Learning and Artificial Intelligence Using Pytdon</td>
+    <td>ITM GOI</td>
+    <td>5 days</td>
+    <td>TEQIP-III, RGPV Bhopal</td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>Ms. Sapna Rajput</td>
+    <td>FDP</td>
+    <td>Emerging Technologies for Smart Cities</td>
+    <td>MITS College, Gwalior</td>
+    <td>5 days</td>
+    <td>RGPV Bhopal</td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>Ms. Sapna Rajput</td>
+    <td>TTP</td>
+    <td>Low Power VLSI Design and Verification</td>
+    <td>ITM-GOI, Gwalior</td>
+    <td>7 days</td>
+    <td>TEQIP-III</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Ms. Sapna Rajput</td>
+    <td>FDP</td>
+    <td>Futuristic Trends in Energy, Material, and Manufacturing Technology</td>
+    <td>Hindustan College of Science & Technology, Matdura</td>
+    <td>7 days</td>
+    <td>TEQIP-III</td>
+  </tr>
+
+  
+  <tr>
+    <td>84</td>
+    <td>Ms. Sapna Rajput</td>
+    <td>FDP</td>
+    <td>FEM & its application in recent material technology</td>
+    <td>Government Engineering College, Bikaner</td>
+    <td>7 Days</td>
+    <td>TEQUIP-III</td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td>Ms. Sapna Rajput</td>
+    <td>STTP</td>
+    <td>Recent Advances in Communication Engineering</td>
+    <td>MITS College, Gwalior</td>
+    <td>1 Day</td>
+    <td>TEQUIP-II</td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>Ms. Sapna Rajput</td>
+    <td>STTP</td>
+    <td>Essentials of IOT</td>
+    <td>Vikrant Group of Institution, Indore in association with RGPV Bhopal and TEQIP –III</td>
+    <td>2 Days</td>
+    <td>TEQUIP-III</td>
+  </tr>
+
+  </tbody>
+
+</table>
+     
+        </main> 
+    </div>
+    <%include ../Footer/footer.html%>
+
+</body>
+</html>

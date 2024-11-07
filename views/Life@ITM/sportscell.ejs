@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Cell</title>
+    <link rel="stylesheet" href="../stylesheets/Life@ITM/lifeITM.css">
+
+
+
+    <style>
+         *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: gilroy;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+   
+    .container{
+        position: relative;
+        padding: 2vh 3vw;
+        margin-bottom: 5%;
+    }
+  
+    .sports{
+        font-size: 18px;
+        margin: 15px;
+        line-height: 1.3;
+        /* background-color: antiquewhite; */
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+   .sports h3{
+    color: #503091;
+   }
+   .sports p{
+    text-align: justify;
+   }
+   .gallery-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    padding: 10px;
+}
+.section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* background-color: #f9f9f9; */
+}
+
+.container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #503091;
+}
+
+.container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    /* color: #555; */
+}
+
+.container ul ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+    </style>
+</head>
+<body>
+    <%include ../Header/nav.html%>
+
+    <div id="img">
+        <img src="../images/Life@ITM/_DSC9205.jpg" alt="">
+        <div id="nameDiv">
+            <h2>Sport Cell</h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+    
+    <div class="container">
+        
+        <div class="sports">
+            <h3>Department Of Sports:</h3>
+            <p> The students of ITM GOI enjoy
+                the World Class facilities of new
+                Composite Sports Complex near
+                ITM campus on an exclusive area
+                of 12 acres which is only five
+                minutes driving distance from
+                the present ITM Campus. This will
+                be first of its kind facility in the
+                State and at par with the best in
+                country under one roof and within
+                single composite campus. All
+                students who are desirous to avail
+                the facility will have centralised
+                time table systems to suit their
+                schedules and will adhere to
+                the physical fitness & other
+                disciplinary norms.The sports facility designed for the ITM GOI is a feature
+                that would elevate the learning experience on a pedestal
+                scarcely matched by any one in the region & State. In
+                the wake of the heightening National euphoria in sports,
+                greater emphasis is given to the quality of each of the
+                
+                games facilities, encouraging sports as not just a free-
+                period play area for students, but a vital part of their
+                
+                academic curriculum and a prospective career option.</p>
+            
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/_DSC1075.jpg" alt="Picture 1">
+                <div class="overlay">
+                    <div class="text">Sports meet</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/_DSC8842.jpg" alt="Picture 2">
+                <div class="overlay">
+                    <div class="text">Long Jump</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/_DSC8940.jpg" alt="Picture 3">
+                <div class="overlay">
+                    <div class="text">Disk Throw</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/_DSC9016.jpg" alt="Picture 1">
+                <div class="overlay">
+                    <div class="text">Javelin Throw</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/DSC_0026.jpg" alt="Picture 2">
+                <div class="overlay">
+                    <div class="text">Basket Ball</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="../images/Life@ITM/DSC_0325.jpg" alt="Picture 3">
+                <div class="overlay">
+                    <div class="text">Kabbadi</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="left-section">
+                <h2>Achievements in Sports Tournaments</h2>
+                <ul>
+                    <li>Amit Sharma was selected for state level Kabaddi.</li>
+                    <li>Nasirullah (CE) - Represented RGPV in the West Zone Football tournament.</li>
+                    <li>Aman Tripathi (EC) - Represented RGPV in the West Zone Basketball championship.</li>
+                    <li>ITM is the winner of Nodal Level Cricket Tournament 2017-18.</li>
+                </ul>
+            </div>
+            <div class="right-section">
+                <h2>Selected Players and Teams</h2>
+                <ul>
+                    <li><strong>Basketball:</strong> Sherin Khan, Shivam Yamdagni</li>
+                    <li><strong>Chess:</strong> Mayank Sharma, Sachin S. Rajawat, Sikha Rajak</li>
+                    <li><strong>Football:</strong> Chitransh Pandey, Sagar Masand</li>
+                    <li><strong>Badminton:</strong> Harishabh Tiwari, Vasundhara Sharma</li>
+                    <li><strong>Handball:</strong> Abhishek Geri, Himalaya Thakur, Navod Sharma, Debashish Samal</li>
+                    <li><strong>Selected for Nationals to represent RGPV Bhopal:</strong></li>
+                    <ul>
+                        <li><strong>Chess:</strong> Mayank Sharma, Shikha Rajak</li>
+                        <li><strong>Athletics:</strong> Pragati Rana, Debashish Sharma</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+
+
+        
+
+        
+    </div>
+    
+    <%include ../Footer/footer.html%>
+
+    
+</body>
+</html>

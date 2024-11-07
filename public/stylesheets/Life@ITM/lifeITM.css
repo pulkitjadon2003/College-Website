@@ -1,0 +1,41 @@
+#img{
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+}
+#img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#img #nameDiv{
+    height: 9vh;
+    width: fit-content;
+    background-color: #d9d9d9;
+    /* border-top: maroon 5px solid; */
+    position: relative;
+    top: -25%;
+    left: 5%;
+
+
+}
+
+#img #nameDiv #line{
+    height: 10%;
+    width: 80%;
+    background-color: rebeccapurple;
+    position: absolute;
+    top: 0;
+}
+
+#nameDiv h2{
+    padding-top: 5%;
+    font-size: 40px;
+    text-align: center;
+    color:black;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+
+}

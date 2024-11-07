@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../stylesheets/Academics/academic.css">
+    <style>
+        main{
+            padding:2.5% !important;
+        }
+        main h2{
+            font-size: 2vmax;
+            padding: 2vh;
+            color: rebeccapurple;
+        }
+        main ul li{
+            width: 90%;
+            margin-bottom: 2vh;
+        }
+        main ol li{
+            margin-bottom: 2vh;
+        }
+        main ol{
+            padding: 0 5% !important;
+        }
+        table td{
+           line-height: 32px;
+        }
+
+        table {
+            height: unset;
+        }
+    </style>
+</head>
+<body>
+    <script src="../javascripts/EC/addSidebarEC.js"></script>
+    
+    <%include ../Header/nav.html%>
+    <div id="img">
+        <img src="../images/CollegeImages/New Reynolds Block.jpg" alt="">
+        <div id="nameDiv">
+            <h2></h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <% include sidebar.html %>
+
+        </aside>
+
+        <main class="content" style="overflow-y: none;">
+            <table>
+                <tr style="height: 3.5max !important;">
+                    <th>Title</th>
+                    <th>Name / Details</th>
+                </tr>
+                <tr>
+                    <td class="section-title">Chairman & HOD-EC & EE</td>
+                    <td>Dr. Manoj Kumar Bandil</td>
+                </tr>
+                <tr>
+                    <td class="section-title">Secretary </td>
+                    <td>
+                        Mr. Shushant Jain Asst. Professor
+                    </td>
+                </tr>
+                <tr>
+                    <td class="section-title">External Member (Academics)</td>
+                    <td>Dr. A. K. Wadhwani Professor, MITS, Gwalior <br>
+                        Dr. Shyam Akashe, ITM University <br>
+                        Dr. Ranjeet Singh Tomar, ITM University
+                    </td>
+                </tr>
+                <tr>
+                    <td class="section-title">Industry Expert</td>
+                    <td>
+                        Ms. Mili Saxena, Ogive Technology
+                    </td>
+                </tr>
+                <tr>
+                    <td class="section-title">Alumni</td>
+                    <td>
+                        Mr. Kunal Gupta  (Former Creative Director, Designer, Photographer, Filmmaker at ONGC Foundation) <br>
+                        Mr. Gaurav Maini (Principal consultant, Karnatkaka) 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="section-title">Internal Member (Academics)</td>
+                    <td>
+                        Mr. Kapil Jain <br>
+                        Mr. Vineet Shrivastava 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="section-title">Student Coordinator</td>
+                    <td>
+                        Mr. Ayush Gupta <br>
+                        Mr. Ashutosh Tiwari 
+                    </td>
+                </tr>
+
+            </table>
+        </main>
+    </div>
+    <%include ../Footer/footer.html%>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+body{
+    overflow-x: hidden;
+}
+main{
+    min-height: 100%;
+    width: 100%;
+    
+}
+.cards{
+    padding: 4% 10% ;
+}
+.card{
+    height: 26vmax;
+    width: 22vmax;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    margin: 2%;
+}
+
+.card .ratio{
+    height: 100%;
+    width: 100%;
+    
+} 
+
+.card .ratio img{
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
+}
+
+#details{
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    bottom: 12%;
+    width: 90%;
+    height: 80%;
+    padding: 0 4% ;
+    opacity: 0;
+    transition: all ease .4s;
+    z-index: 1;
+    margin-left: 5%;
+}
+
+#underline{
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color:#FEFF4B;
+    /* transform: scaleX(0); */
+    transform-origin: 0 0;
+    transition-delay: .5s;
+    transition: all ease-out .4s;
+    overflow-y: hidden;
+}
+
+.card:hover #details{
+    opacity: 1;
+}
+
+#details p{
+    width: 100%; 
+    text-align: left;
+}
+#details h3{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 4vh;
+}
+
+.card:hover #underline{
+    width: 100%;
+}
+.card:hover .ratio img{
+    filter: brightness(50%) blur(2px);
+}
+
+#details span{
+    width: 80%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+#feature-heading{
+    width: 22vmax;
+    background:linear-gradient(transparent,rgba(0, 0, 0, 0.8));
+    color: white;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out .4s;
+    transition-delay: .2s;
+}
+
+.card #feature-heading h2{
+    padding-left:1vw ;
+    position: absolute;
+    bottom:5vh;
+    opacity: 1;
+    transition: all ease-in-out .4s;
+
+}
+
+.card:hover  #feature-heading h2{
+    opacity: 0;
+}
+
+.card:hover  #feature-heading{
+    height: 100%;
+    opacity: .8;
+
+}

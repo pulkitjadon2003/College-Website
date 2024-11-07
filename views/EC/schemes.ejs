@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            height: auto;
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        tr td{
+            text-align: center  ;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        th, td {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        th:first-child, td:first-child {
+            border-left: 1px solid #dddddd;
+        }
+
+        th:last-child, td:last-child {
+            border-right: 1px solid #dddddd;
+        }
+
+        caption {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333333;
+        }
+    </style>
+    <style>
+        
+        .section {
+            margin-bottom: 0;
+        }
+        
+        .section h2 {
+            background-color: rebeccapurple;
+            color: white;
+            padding: 10px;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .course {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            border-bottom: 1px solid #ddd;
+            background-color: #f8f9fa;
+        }
+        
+        .course:nth-child(even) {
+            background-color: white;
+        }
+        
+        .course-title {
+            color: #2d7fbc;
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .actions{
+            width: 35%;
+        }
+        
+        .actions a {
+            text-decoration: none;
+            color: #2d7fbc;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        
+        .course-title .sem {
+            color: #e34234;
+            font-weight: bold;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="../stylesheets/Academics/academic.css">
+    <script src="../javascripts/EC/addSidebarEC.js"></script>
+
+</head>
+<body>
+    <%include ../Header/nav.html%>
+
+    <div id="img">
+        <img src="../images/CollegeImages/New Reynolds Block.jpg" alt="">
+        <div id="nameDiv">
+            <h2></h2>
+            <div id="line"></div>
+        </div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <% include sidebar.html %>
+
+        </aside>
+        <main class="content">
+            
+                <div class="section">
+                    <h2>B. Tech CSE Schemes</h2>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem I</a></div>
+                        <div class="actions">
+                            <a href="../docs/Academics/frm_download_file.pdf">Download File</a>
+
+                            
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering)  | <a href="#" class="sem">Sem II</a></div>
+                        <div class="actions">
+                            <a href="../docs/Academics/frm_download_file.pdf">Download File</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem III</a></div>
+                        <div class="actions">
+                            <a href="../docs/Academics/frm_download_file (2).pdf">Download File</a> 
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem IV</a></div>
+                        <div class="actions">
+                            <a href="../docs/Academics/frm_download_file (3).pdf">Download File</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem V</a></div>
+                        <div class="actions">
+                            <a href="../docs/Academics/frm_download_file (4).pdf">Download File</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering)| <a href="#" class="sem">Sem VI</a></div>
+                        <div class="actions">
+                            <a href="../docs/Academics/frm_download_file (5).pdf">Download File</a> 
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem VII</a></div>
+                        <div class="actions">
+                            <a href="../docs/Academics/frm_download_file (6).pdf">Download File</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem VIII</a></div>
+                        <div class="actions">
+                            <a href="../docs/Academics/frm_download_file (7).pdf">Download File</a>
+                        </div>
+                    </div>
+
+                </div>
+<br>
+
+                <div class="section">
+                    <h2>B. Tech CSE Syllabus</h2>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem I </a> </div>
+                        <div class="actions">
+
+                            <a target="_blank" href="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/I_sem_CSBS_Syllabus050622115022.pdf">Download File</a> 
+
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering)| <a href="#" class="sem">Sem II</a></div>
+                        <div class="actions">
+                            <a href="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/II_sem_CSBS_Syllabus050622115048.pdf">Download File</a> 
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering)| <a href="#" class="sem">Sem III</a></div>
+                        <div class="actions">
+                            <a href="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/CS%20III%20Sy100719012330.pdf">Download File</a> 
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem IV</a></div>
+                        <div class="actions">
+                            <a href="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/cse020119025106.pdf">Download File</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem V</a></div>
+                        <div class="actions">
+                            <a href="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/V%20Sem%20CSE_Sy060719033838.pdf">Download File</a>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering)| <a href="#" class="sem">Sem VI</a></div>
+                        <div class="actions">
+                            <a href="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/CSE-6_Sem_Syallbus311219032311.pdf">Download File</a> 
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering)| <a href="#" class="sem">Sem VII</a></div>
+                        <div class="actions">
+                            <a href="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/Computer_Science_100720025532.pdf">Download File</a> 
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-title">B.Tech (Computer Science and Engineering) | <a href="#" class="sem">Sem VIII</a></div>
+                        <div class="actions">
+                            <a href="https://www.rgpv.ac.in/UC/frm_download_file.aspx?Filepath=CDN/PubContent/Scheme/CSE_VIII_Sem_RGPV-Syllabus060221121616.pdf">Download File</a>
+                        </div>
+                    </div>
+
+                </div>
+
+        </main> 
+    </div>
+    <%include ../Footer/footer.html%>
+
+</body>
+</html>

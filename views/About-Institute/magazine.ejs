@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Magazine</title>
-    <link rel="stylesheet" href="/font.css">
-    <link rel="stylesheet" href="inner.css">
+    <link rel="stylesheet" href="../stylesheets/About Institute/inner.css">
 
     <style>
         *{
@@ -76,15 +75,14 @@
             text-decoration: underline;
         }
     </style>
-    <script src="/nav-enable.js"></script>
 </head>
 <body>
 <div id="main">
-    <div id="nav-container"></div>
+    <%include ../Header/nav.html%>
 
 
     <div id="img">
-        <img src="./dunedin-university-of.jpg" alt="">
+        <img src="../images/About Institute/DSC_0522.JPG" alt="">
         <div id="nameDiv">
             <h2>Student Magazine
             </h2>
@@ -106,21 +104,21 @@
             <tr>
                 <td>
                     ITM Gwalior - Ojas Magazine 2020-2021</td>
-                <td><a href="./doc/Ojas_Magazine_2020_2021.pdf" download="./doc/Ojas_Magazine_2020_2021.pdf" view="">View</a></td>
+                <td><a href="../docs/About Institute/Ojas_Magazine_2020_2021.pdf"  view="">View</a></td>
                 <td>PDf</td>
                 
             </tr>
             <tr>
                 <td>
                     ITM Gwalior - Ojas Magazine 2019-2020</td>
-                <td><a href="./doc/Ojas_Magazine_2019_2020.pdf" download="./doc/Ojas_Magazine_2019_2020.pdf"view="">View</a></td>
+                <td><a href="../docs/About Institute/Ojas_Magazine_2019_2020.pdf" view="">View</a></td>
                 <td>PDF</td>
                 
             </tr>
             <tr>
                 <td>
                     ITM Gwalior - Ojas Magazine 2018-2019</td>
-                <td><a href="./doc/Ojas_Magazine_2018_2019.pdf" download="./doc/Ojas_Magazine_2018_2019.pdf"view="">View</a></td>
+                <td><a href="../docs/About Institute/Ojas_Magazine_2018_2019.pdf" view="">View</a></td>
                 <td>PDF</td>
                 
             </tr>
@@ -128,7 +126,7 @@
         </table>
         
     </div>
-    <div id="footer-container"></div>
+    <%include ../Footer/footer.html%>
 
 </div>
 </body>

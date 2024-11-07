@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Science and Engineering</title>
+
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            height: auto;
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            
+        }
+
+
+        
+        th {
+            background-color: #007BFF;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        tr td{
+            text-align: left  ;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        th, td {
+            border-bottom: 1px solid #dddddd;
+            text-align: left;
+        }
+
+        th:first-child, td:first-child {
+            border-left: 1px solid #dddddd;
+        }
+        th:nth-last-child(4th), td:last-child {
+            border-right: 1px solid #dddddd;
+            text-align: center;
+            background-color: rgb(153, 51, 59);
+        }
+
+
+        th:last-child, td:last-child {
+            border-right: 1px solid #dddddd;
+            text-align: center;
+        }
+
+        caption {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333333;
+        }
+    </style>
+    <link rel="stylesheet" href="academic.css">
+    <script src="/nav-enable.js"></script>
+    <script src="addSidebar.js"></script>
+
+</head>
+<body>
+    <div id="nav-container"></div>
+
+    <div id="img">
+        <img src="../dunedin-university-of.jpg" alt="">
+        <div id="nameDiv">
+            <h2>Department of Computer Science and Engineering</h2>
+            <div id="line"></div>
+
+        </div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            
+        </aside>
+        <main class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Name of Faculty</th>
+                        <th>Nature of the Program</th>
+                        <th>Topic</th>
+                        <th>Organized By</th>
+                        <th>Days & Duration</th>
+                        <th>Approved By</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Ms. Aruna Bajpai</td>
+                        <td>STTP</td>
+                        <td>Applied Computing</td>
+                        <td>MITS, Gwalior</td>
+                        <td>21-25 June 2021</td>
+                        <td>AICTE</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Ms. Neelam Joshi</td>
+                        <td>FDP</td>
+                        <td>Artificial Intelligence</td>
+                        <td>Model Engineering College</td>
+                        <td>22-26 Feb, 2021</td>
+                        <td>ATAL Academy Faculty Development Programme</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Ms. Aruna Bajpai</td>
+                        <td>FDP</td>
+                        <td>Cyber Security</td>
+                        <td>St. Agnes College</td>
+                        <td>08-12 February 2021</td>
+                        <td>ATAL Academy Faculty Development Programme</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Ms. Archana Tomar</td>
+                        <td>FDP</td>
+                        <td>Artificial Intelligence</td>
+                        <td>Ramakrishna Mission Vivekanand Education and Research Institute</td>
+                        <td>01-05 February 2021</td>
+                        <td>ATAL Academy Faculty Development Programme</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Ms. Aruna Bajpai</td>
+                        <td>FDP</td>
+                        <td>Data Science</td>
+                        <td>KLEDR M. S. Sheshgiri College of Engineering & Technology, Belagavi</td>
+                        <td>01-05 February 2021</td>
+                        <td>ATAL Academy Faculty Development Programme</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Mr. C. P. Bhargava</td>
+                        <td>FDP</td>
+                        <td>Data Sciences</td>
+                        <td>KLE DR. M. S. Sheshgiri College of Engineering & Technology Belagavi</td>
+                        <td>01-05 February 2021</td>
+                        <td>ATAL Academy Faculty Development Programme</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Mr. D. D. Shrivastava</td>
+                        <td>FDP</td>
+                        <td>Data Sciences</td>
+                        <td>KLE DR. M. S. Sheshgiri College of Engineering & Technology Belagavi</td>
+                        <td>01-05 February 2021</td>
+                        <td>ATAL Academy Faculty Development Programme</td>
+                    </tr>
+                    
+                        <tr>
+                            <td>8.</td>
+                            <td>Ms. Archana Tomar</td>
+                            <td>FDP</td>
+                            <td>Big Data Analytics</td>
+                            <td>Siddharth Institute of Engineering & Technology</td>
+                            <td>25-29 January 2021</td>
+                            <td>ATAL Academy Faculty Development Programme</td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>Mr. D. D. Shrivastava</td>
+                            <td>FDP</td>
+                            <td>Internet of Things (IoT)</td>
+                            <td>SIKSHA O ANUSANDHAN</td>
+                            <td>21-25 January 2021</td>
+                            <td>ATAL Academy Faculty Development Programme</td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Mr. C. P. Bhargava</td>
+                            <td>FDP</td>
+                            <td>Internet of Things (IoT)</td>
+                            <td>SIKSHA O ANUSANDHAN</td>
+                            <td>21-25 January 2021</td>
+                            <td>ATAL Academy Faculty Development Programme</td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td>Ms. Archana Tomar</td>
+                            <td>FDP</td>
+                            <td>Data Science</td>
+                            <td>SAINTGITS College of Engineering</td>
+                            <td>18-22 January 2021</td>
+                            <td>ATAL Academy Faculty Development Programme</td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>Ms. Neelam Joshi</td>
+                            <td>NPTEL</td>
+                            <td>Computer Network & Internet Protocols</td>
+                            <td>NPTEL</td>
+                            <td>Jan-Jun 2021</td>
+                            <td>NPTEL</td>
+                        </tr>
+                        <tr>
+                            <td>13.</td>
+                            <td>Ms. Archana Tomar</td>
+                            <td>Short Term Training Programme</td>
+                            <td>Recent Trends in Cloud Computing</td>
+                            <td>DRIEMS Autonomous Engineering College</td>
+                            <td>07-12 Dec, 2020</td>
+                            <td>AICTE</td>
+                        </tr>
+                        <tr>
+                            <td>14.</td>
+                            <td>Ms. Neelam Joshi</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Artificial Intelligence</td>
+                            <td>IIIT, Naya Raipur</td>
+                            <td>21-25 Nov, 2020</td>
+                            <td>AICTE</td>
+                        </tr>
+                        <tr>
+                            <td>15.</td>
+                            <td>Ms. Reena Chauhan</td>
+                            <td>Short Term Training Programme</td>
+                            <td>Internet of Things (IoT) & Data Analytics</td>
+                            <td>MITS, Gwalior</td>
+                            <td>23-24 Oct, 2020</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                        </tr>
+
+                        <tr>
+                            <td>16.</td>
+                            <td>Ms. Aruna Bajpai</td>
+                            <td>Short Term Training Programme</td>
+                            <td>AI Enabled Augmented Analytics for Business Intelligence</td>
+                            <td>CMR, Bangalore</td>
+                            <td>12-17 Oct, 2020</td>
+                            <td>AICTE</td>
+                        </tr>
+                        <tr>
+                            <td>17.</td>
+                            <td>Mr. Deshdeepak Shrivastava</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Data Analysis & Visualization Using Pandas, Seaborn & Plotly In Python</td>
+                            <td>CSI, Gwalior</td>
+                            <td>16-18 July, 2020</td>
+                            <td>CSI, Gwalior</td>
+                        </tr>
+                        <tr>
+                            <td>18.</td>
+                            <td>Ms. Archana Tomar</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Data Analysis & Visualization Using Pandas, Seaborn & Plotly In Python</td>
+                            <td>CSI, Gwalior</td>
+                            <td>16-18 July, 2020</td>
+                            <td>CSI, Gwalior</td>
+                        </tr>
+                        <tr>
+                            <td>19.</td>
+                            <td>Dr. Pradeep Yadav</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Data Analytics using Python</td>
+                            <td>NITTTR, Chandigarh</td>
+                            <td>18-22 May, 2020</td>
+                            <td>AICTE-ATAL</td>
+                        </tr>
+                        <tr>
+                            <td>20.</td>
+                            <td>Mr. Manuj Mishra</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Data Analytics using Python</td>
+                            <td>NITTTR, Chandigarh</td>
+                            <td>18-22 May, 2020</td>
+                            <td>AICTE-ATAL</td>
+                        </tr>
+                        <tr>
+                            <td>21.</td>
+                            <td>Dr. Pradeep Yadav</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Block Chain</td>
+                            <td>MSME-Technology Development Centre (PPDC)</td>
+                            <td>27-31 May, 2020</td>
+                            <td>AICTE-ATAL</td>
+                        </tr>
+                        <tr>
+                            <td>22.</td>
+                            <td>Mr. Manuj Mishra</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Block Chain</td>
+                            <td>MSME-Technology Development Centre (PPDC)</td>
+                            <td>27-31 May, 2020</td>
+                            <td>AICTE-ATAL</td>
+                        </tr>
+                        <tr>
+                            <td>23.</td>
+                            <td>Dr. Pradeep Yadav</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Internet of Things</td>
+                            <td>NITTTR, Chandigarh</td>
+                            <td>10-14 April, 2020</td>
+                            <td>AICTE-ATAL</td>
+                        </tr>
+                        <tr>
+                            <td>24.</td>
+                            <td>Mr. Manuj Mishra</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Internet of Things</td>
+                            <td>NITTTR, Chandigarh</td>
+                            <td>10-14 April, 2020</td>
+                            <td>AICTE-ATAL</td>
+                        </tr>
+
+                          <tr>
+                            <td>25</td>
+                            <td>Dr. Pradeep Yadav</td>
+                            <td>NPTEL (12 Weeks)</td>
+                            <td>Data Analytics with Python</td>
+                            <td>IIT, Roorkee</td>
+                            <td>Jan–April, 2020</td>
+                            <td>SWAYAM</td>
+                          </tr>
+                          <tr>
+                            <td>26</td>
+                            <td>Dr. Pradeep Yadav</td>
+                            <td>NPTEL (4 Weeks)</td>
+                            <td>Software testing</td>
+                            <td>IIT, Kharagpur</td>
+                            <td>Jan–April, 2020</td>
+                            <td>IIT, Kharagpur</td>
+                          </tr>
+                          <tr>
+                            <td>27</td>
+                            <td>Dr. Pradeep Yadav</td>
+                            <td>Senior Teaching Certificate</td>
+                            <td>Introduction to Big Data</td>
+                            <td>UC San Diego, Coursera</td>
+                            <td>06 Feb, 2020</td>
+                            <td>Coursera</td>
+                          </tr>
+                          <tr>
+                            <td>28</td>
+                            <td>Ms. Reena Chauhan</td>
+                            <td>Faculty Development Programme</td>
+                            <td>ML and AI by Using Python</td>
+                            <td>RGPV, Bhopal</td>
+                            <td>17-21 Dec, 2019</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>29</td>
+                            <td>Mr. Shirish Mohan Dubey</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Machine Learning and AI with Python</td>
+                            <td>RGPV, Bhopal</td>
+                            <td>17-21 Dec, 2019</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>30</td>
+                            <td>Ms. Anushree Chausalakar</td>
+                            <td>Faculty Development Programme</td>
+                            <td>ML and AI by Using Python</td>
+                            <td>RGPV, Bhopal</td>
+                            <td>17-21 Dec, 2019</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>31</td>
+                            <td>Ms. Aruna Bajpai</td>
+                            <td>Faculty Development Programme</td>
+                            <td>ML and AI by Using Python</td>
+                            <td>RGPV, Bhopal</td>
+                            <td>17-21 Dec, 2019</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>32</td>
+                            <td>Mr. Gaurav Dubey</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Product to be Smart with Artificial Intelligence</td>
+                            <td>RGPV, Bhopal</td>
+                            <td>19-23 Nov, 2019</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>33</td>
+                            <td>Mr. Gaurav Dubey</td>
+                            <td>NPTEL (12 Weeks)</td>
+                            <td>Computer Networks</td>
+                            <td>SWAYAM</td>
+                            <td>Aug-Oct, 2019</td>
+                            <td>SWAYAM</td>
+                          </tr>
+                          <tr>
+                            <td>34</td>
+                            <td>Mr. Manuj Mishra</td>
+                            <td>NPTEL (8 Weeks)</td>
+                            <td>TOC</td>
+                            <td>IIT, Kanpur</td>
+                            <td>July-Sep, 2019</td>
+                            <td>IIT, Kanpur</td>
+                          </tr>
+                    
+                          <tr>
+                            <td>35</td>
+                            <td>Mr. Gaurav Dubey</td>
+                            <td>Faculty Development Programme</td>
+                            <td>InfyTQ based foundation program</td>
+                            <td>Infosys</td>
+                            <td>12-19 July, 2019</td>
+                            <td>Infosys</td>
+                          </tr>
+                          <tr>
+                            <td>36</td>
+                            <td>Mr. Chandra Prakash Bhargava</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Data Analytics with Python</td>
+                            <td>Electronics & ICT Academy, IIT, Roorkee</td>
+                            <td>18-22 June, 2019</td>
+                            <td>IIT, Roorkee</td>
+                          </tr>
+                          <tr>
+                            <td>37</td>
+                            <td>Dr. Jitendra Singh Kushwah</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Data Analytics with Python</td>
+                            <td>Electronics & ICT Academy, IIT, Roorkee</td>
+                            <td>18-22 June, 2019</td>
+                            <td>IIT, Roorkee</td>
+                          </tr>
+                          <tr>
+                            <td>38</td>
+                            <td>Mr. Deshdeepak Shrivastava</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Data Analytics with Python</td>
+                            <td>Electronics & ICT Academy, IIT, Roorkee</td>
+                            <td>18-22 June, 2019</td>
+                            <td>IIT, Roorkee</td>
+                          </tr>
+                          <tr>
+                            <td>39</td>
+                            <td>Mr. Nitin Dixit</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Applications of Embedded Systems to IOT Using ML</td>
+                            <td>ITM University Gwalior (M.P.)</td>
+                            <td>24-29 June, 2019</td>
+                            <td>ITM University, Gwalior</td>
+                          </tr>
+                          <tr>
+                            <td>40</td>
+                            <td>Ms. Anushree Chausalakar</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Applications of Embedded Systems to IOT Using ML</td>
+                            <td>ITM University Gwalior (M.P.)</td>
+                            <td>24-29 June, 2019</td>
+                            <td>ITM University, Gwalior</td>
+                          </tr>
+                          <tr>
+                            <td>41</td>
+                            <td>Ms. Anushree Chausalakar</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Cloud computing</td>
+                            <td>NPTEL</td>
+                            <td>Feb-Apr, 2019</td>
+                            <td>SWAYAM</td>
+                          </tr>
+                          <tr>
+                            <td>42</td>
+                            <td>Ms. Archana Tomar</td>
+                            <td>Faculty Development Programme</td>
+                            <td>DBMS</td>
+                            <td>NPTEL</td>
+                            <td>Feb–Apr, 2019</td>
+                            <td>SWAYAM</td>
+                          </tr>
+                          <tr>
+                            <td>43</td>
+                            <td>Ms. Priusha Narwaria</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Python</td>
+                            <td>ITM, Gwalior</td>
+                            <td>26-29 Dec, 2018</td>
+                            <td>ITM, Gwalior</td>
+                          </tr>
+                          <tr>
+                            <td>44</td>
+                            <td>Dr. Pradeep Yadav</td>
+                            <td>Summer Teaching Programme</td>
+                            <td>Developments and Challenges in Software Development Practices and Technologies Needed for Digital India Programme</td>
+                            <td>IIT, Roorkee</td>
+                            <td>28 May-01 June 2018</td>
+                            <td>IIT, Roorkee</td>
+                          </tr>
+                          <tr>
+                            <td>45</td>
+                            <td>Mr. Deshdeepak Shrivastava</td>
+                            <td>Faculty Development Programme</td>
+                            <td>A practical approach towards Data science and artificial intelligence</td>
+                            <td>SOIT, RGPV Bhopal</td>
+                            <td>29 Ma-02 June 2018</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>46</td>
+                            <td>Dr. Pradeep Yadav</td>
+                            <td>NPTEL</td>
+                            <td>Cloud Computing</td>
+                            <td>IIT, Kharagpur</td>
+                            <td>Jan-April, 2018</td>
+                            <td>SWAYAM</td>
+                          </tr>
+                          <tr>
+                            <td>47</td>
+                            <td>Mr. Kuldeep Singh Jadon</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Emerging Technologies For Smart Cities</td>
+                            <td>Vikrant Institute Of Technology & Management, Gwalior</td>
+                            <td>27-31 Mar, 2018</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>48</td>
+                            <td>Mr. Manuj Mishra</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Emerging Technologies For Smart Cities</td>
+                            <td>Vikrant Institute Of Technology & Management, Gwalior</td>
+                            <td>27-31 Mar, 2018</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>49</td>
+                            <td>Ms. Priusha Narwaria</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Emerging Technologies For Smart Cities</td>
+                            <td>Vikrant Institute Of Technology & Management, Gwalior</td>
+                            <td>27-31 Mar, 2018</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>50</td>
+                            <td>Mr. Kuldeep Singh Jadon</td>
+                            <td>Faculty Development Programme</td>
+                            <td>Modeling, Simulation and Implementation Using MATLAB</td>
+                            <td>THDC Institute of Hydropower Engineering and Technology</td>
+                            <td>31 Jan-04 Feb 2018</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>51</td>
+                            <td>Mr. Deshdeepak Shrivastava</td>
+                            <td>Refresher course</td>
+                            <td>Cyber security and Forensics</td>
+                            <td>Academic staff College, Bhopal</td>
+                            <td>25 July-29 July 2017</td>
+                            <td>RGPV Bhopal under TEQIP-III</td>
+                          </tr>
+                          <tr>
+                            <td>52</td>
+                            <td>Dr. Pradeep Yadav</td>
+                            <td>NPTEL (8 Weeks)</td>
+                            <td>Operating system</td>
+                            <td>IIT, Madras</td>
+                            <td>July-Sept, 2017</td>
+                            <td>SWAYAM</td>
+                          </tr>
+                          <tr>
+                            <td>53</td>
+                            <td>Dr. Pradeep Yadav</td>
+                            <td>Workshop</td>
+                            <td>LaTeX and MATLAB: Indispensable Tools for Research</td>
+                            <td>Jagannath University, Jaipur</td>
+                            <td>06-10 Feb, 2017</td>
+                            <td>Jagannath University, Jaipur</td>
+                          </tr>
+                </tbody>
+
+            </table>
+     
+        </main> 
+    </div>
+    <div id="footer-container"></div>
+
+</body>
+</html>
