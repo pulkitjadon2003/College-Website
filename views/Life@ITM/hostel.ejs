@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hostel Information</title>
-    <link rel="stylesheet" href="/font.css">
-    <link rel="stylesheet" href="lifeITM.css">
+    <link rel="stylesheet" href="../stylesheets/Life@ITM/lifeITM.css">
 
 
     <style>
@@ -206,12 +205,11 @@ table tbody tr:nth-child(odd) {
 
 
     </style>
-    <script src="/nav-enable.js"></script>
 </head>
 <body>
-    <div id="nav-container"></div>
+    <%include ../Header/nav.html%>
     <div id="img">
-        <img src="./dunedin-university-of.jpg" alt="">
+        <img src="../images/CollegeImages/Hostel.jpg" alt="">
         <div id="nameDiv">
             <h2>Hostel </h2>
             <div id="line"></div>
@@ -323,7 +321,7 @@ table tbody tr:nth-child(odd) {
         </tbody>
     </table>
 </div>
-<div id="footer-container"></div>
 
+    <%include ../Footer/footer.html%>
 </body>
 </html>
