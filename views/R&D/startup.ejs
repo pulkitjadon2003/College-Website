@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Committee Structure</title>
-    <link rel="stylesheet" href="/font.css">
-    <link rel="stylesheet" href="/Life@ITM/lifeITM.css">
+    <title>StartUps And Innovation</title>
+    <link rel="stylesheet" href="../stylesheets/font.css">
+    <link rel="stylesheet" href="../stylesheets/R&D.css">
 
     <style>
         body {
@@ -174,33 +174,14 @@ li {
         border-radius: 8px;
     }
     </style>
-     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("/Header_folder/nav.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("nav-container").innerHTML = data;
-            // Load the nav.js file after the HTML is loaded
-            let script = document.createElement("script");
-            script.src = "/Header_folder/nav.js";
-            document.body.appendChild(script);
-          });
-      });
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("/Footer_folder/footer.html") // Load the nav.html file
-          .then((response) => response.text()) // Get its content
-          .then((data) => {
-            document.getElementById("footer-container").innerHTML = data; // Insert into the page
-          });
-      });
-    </script>
+   
   </head>
   <body>
-    <div id="nav-container"></div>
+    <%include ../Header/nav.html%>
     <div id="img">
-        <img src="/Life@ITM/dunedin-university-of.jpg" alt="">
+        <img src="../images/R&D/dunedin-university-of.jpg" alt="">
         <div id="nameDiv">
-            <h2>Committee Structure</h2>
+            <h2>StartUp / Innovation / Incubation Cell</h2>
             <div id="line"></div>
 
         </div>
@@ -216,7 +197,7 @@ li {
             
         </div>
         <section id="section1">
-            <h3></h3>
+            <h3>Institute Innovation Council</h3>
             <p>To further institutionalize the innovation ecosystem, our institute has established a
                 well-structured Institute Innovation Council (IIC). This council comprises deans, heads
                 of departments, and faculty members who bring diverse expertise and perspectives to
@@ -258,14 +239,14 @@ imaginative concepts into tangible realities.
         <section id="section1">
             <div class="gallery-container">
                 <div class="gallery-item">
-                    <img src="./img/image.png" alt="Picture 1">
+                    <img src="../images/R&D/image.png" alt="Picture 1">
                     <div class="overlay">
                         <div class="text">Drone Mania</div>
                     </div>
                 </div>
                
                 <div class="gallery-item">
-                    <img src="./img/sih.png" alt="Picture 3">
+                    <img src="../images/R&D/sih.png" alt="Picture 3">
                     <div class="overlay">
                         <div class="text">Smart India Hackathon-2019 for
 
@@ -273,7 +254,7 @@ imaginative concepts into tangible realities.
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="./img/robo.png" alt="Picture 1">
+                    <img src="../images/R&D/robo.png" alt="Picture 1">
                     <div class="overlay">
                         <div class="text">Makers Club </div>
                     </div>
@@ -306,7 +287,7 @@ imaginative concepts into tangible realities.
             </section>
     </main>
      
-        <div id="footer-container"></div>
+    <%include ../Footer/footer.html%>
 
 </body>
 </html>
