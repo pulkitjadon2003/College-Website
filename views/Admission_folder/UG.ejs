@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UG Admission Programs</title>
+    <link rel="stylesheet" href="../stylesheets/font.css">
+    <link rel="stylesheet" href="../stylesheets/Admission/admission.css">
+
+
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      
+      main {
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+        padding: 10px;
+      }
+      .panel {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+      .panel.btech {
+        background-color: white;
+      }
+      .panel.barch {
+        background-color: #fffacd;
+      }
+      .panel h2 {
+        margin-top: 0;
+        border-bottom: 2px solid red;
+        padding-bottom: 10px;
+      }
+      .panel ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+      .panel ul li {
+        margin-bottom: 10px;
+      }
+      .container-str {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+        padding: 10px;
+      }
+      .panel {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+      .panel.fee-structure {
+        background-color: #ffcccb;
+      }
+      .panel.notices {
+        background-color: #ffebcd;
+      }
+      .panel h2 {
+        margin-top: 0;
+        border-bottom: 2px dashed #000;
+        padding-bottom: 10px;
+      }
+      .panel ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+      .panel ul li {
+        margin-bottom: 10px;
+      }
+      .contact-details {
+        margin-top: 20px;
+      }
+      .contact-details p {
+        margin: 5px 0;
+      }
+      .zoom-info {
+        margin-top: 20px;
+      }
+    </style>
+   
+  </head>
+  <body>
+    <%include ../Header/nav.html%>
+    <div id="img">
+      <img src="../images/Admission/dunedin-university-of.jpg" alt="">
+      <div id="nameDiv">
+          <h2>Undergraduate Admission Programs</h2>
+          <div id="line"></div>
+
+      </div>
+  </div>
+
+    
+
+    <!-- <header>
+        <h1>Undergraduate Admission Programs</h1>
+    </header> -->
+
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Program</th>
+            <th>Number of Seats</th>
+            <th>Eligibility</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Computer Science Engineering</td>
+            <td>240</td>
+            <td>10+2 with PCM Group <br> (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+            <td>4 Years</td>
+        </tr>
+        <tr>
+            <td>Computer Science Engineering (AI/ML)</td>
+            <td>90</td>
+            <td>10+2 with PCM Group (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+            <td>4 Years</td>
+        </tr>
+        <tr>
+            <td>Computer Science Engineering (IOT)</td>
+            <td>60</td>
+            <td>10+2 with PCM Group (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+            <td>4 Years</td>
+        </tr>
+        <tr>
+            <td>Computer Science Engineering (DS)</td>
+            <td>90</td>
+            <td>10+2 with PCM Group (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+            <td>4 Years</td>
+        </tr>
+        <tr>
+          <td>Computer Science Engineering (Cyber Security)</td>
+          <td>30</td>
+          <td>10+2 with PCM Group (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+          <td>4 Years</td>
+      </tr>
+        <tr>
+            <td>Electronics &amp; Comm. Engineering</td>
+            <td>60</td>
+            <td>10+2 with PCM Group (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+            <td>4 Years</td>
+        </tr>
+        <tr>
+            <td>Mechanical Engineering</td>
+            <td>30</td>
+            <td>10+2 with PCM Group (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+            <td>4 Years</td>
+        </tr>
+        <tr>
+            <td>Civil Engineering</td>
+            <td>30</td>
+            <td>10+2 with PCM Group (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+            <td>4 Years</td>
+        </tr>
+        <tr>
+            <td>Information Technology</td>
+            <td>120</td>
+            <td>10+2 with PCM Group (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+            <td>4 Years</td>
+        </tr>
+        <tr>
+            <td>Chemical Engineering</td>
+            <td>30</td>
+            <td>10+2 with PCM Group (Min. 45% for General Candidates and Min. 40% for SC, ST, OBC)</td>
+            <td>4 Years</td>
+        </tr>
+          <!-- Add more programs as needed -->
+        </tbody>
+      </table>
+    </main>
+    <div class="container">
+      <div class="panel btech">
+        <h2>Admission - Undergraduate</h2>
+        <ul>
+          <li>Admission Rule Book</li>
+          <li>Schedule</li>
+          <li>Apply Online</li>
+        </ul>
+      </div>
+      <div class="panel barch">
+        <h2>Admission - Postgradute</h2>
+        <ul>
+          <li>Admission Rule Book</li>
+          <li>Schedule</li>
+          <li>Apply Online</li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="container-str">
+      <div class="panel fee-structure">
+        <h2>
+          Fee Structure/Documents required at the time of admission/Hostel
+          Registration
+        </h2>
+        <ul>
+          <li>Academic Fee</li>
+          <li>Hostel and Mess Fee</li>
+          <li>Document required at the time of admission</li>
+          <li>Hostel Registration</li>
+        </ul>
+      </div>
+      <div class="panel notices">
+        <h2>Important Notices</h2>
+        <div class="contact-details">
+          <p>Contact Details:</p>
+          <p>Dr. Manish Dixit - 9343250503</p>
+          <p>Ms. Jyotsna Singh - 9425460166</p>
+        </div>
+        <div class="zoom-info">
+          <p>Admission Enquiry Form</p>
+          <p>
+            Counselling doubt clearing online session time: 12:00 noon daily
+          </p>
+          <p>Zoom Meeting Link</p>
+          <p>Password: 1</p>
+        </div>
+      </div>
+    </div> -->
+
+
+    <%include ../Footer/footer.html%>
+
+  </body>
+</html>

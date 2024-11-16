@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download PDF Example</title>
+    <link rel="stylesheet" href="../stylesheets/font.css">
+    <link rel="stylesheet" href="../stylesheets/Admission/admission.css">
+
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: gilroy;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .download-container {
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <%include ../Header/nav.html%>
+
+    <div id="img">
+      <img src="../images/Admission/dunedin-university-of.jpg" alt="">
+      <div id="nameDiv">
+          <h2>Institute Prospectus</h2>
+          <div id="line"></div>
+
+      </div>
+  </div>
+    <div class="download-container">
+      <h1>Institute Prospectus</h1>
+      <table>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Title</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="#" onclick="downloadPDF('path_to_prospectus.pdf')"
+              >Download Prospectus 2022 PDF | Size: 1MB</a
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <%include ../Footer/footer.html%>
+
+    <script>
+      function downloadPDF(filePath) {
+        const link = document.createElement("a");
+        link.href = filePath;
+        link.download = filePath.split("/").pop();
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
+    <script src="../javascripts/script.js"></script>
+  </body>
+</html>
