@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Information</title>
+  <link rel="stylesheet" href="../stylesheets/font.css">
+  <link rel="stylesheet" href="../stylesheets/Admission/admission.css">
+
+
+  <style>
+   
+    .details {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      box-sizing: border-box;
+    }
+
+    .header {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .sub-header {
+      background-color: #ffd700;
+      color: black;
+      font-size: 18px;
+      text-align: center;
+      padding: 5px 0;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    .content {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .link-button {
+      display: block;
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+ 
+</head>
+
+<body>
+  <%include ../Header/nav.html%>
+  <div id="img">
+    <img src="../images/Admission/dunedin-university-of.jpg" alt="">
+    <div id="nameDiv">
+      <h2>Contact</h2>
+      <div id="line"></div>
+
+    </div>
+  </div>
+
+
+  <div class="details">
+    <div class="card">
+      <div class="header">Dr. Manish Dixit</div>
+      <div class="sub-header">Chairman Admission Committee</div>
+      <div class="content">
+        <strong>Address:</strong><br />Dept. of CSE, MITS, Gwalior-05 (M.P.)
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="header">Contact No:</div>
+      <div class="content">9343250503</div>
+    </div>
+
+    <div class="card">
+      <div class="header">Email & Enquiry Form</div>
+      <div class="content">admissions@mitsgwalior.in</div>
+      <a href="LINK_TO_YOUR_FORM" class="link-button">Admission Enquiry Form</a>
+    </div>
+  </div>
+
+  <%include ../Footer/footer.html%>
+
+</body>
+
+</html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Committee Structure</title>
+    <link rel="stylesheet" href="../stylesheets/font.css">
     <link rel="stylesheet" href="../stylesheets/Life@ITM/lifeITM.css">
 
     <style>
@@ -12,6 +13,10 @@
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+}
+html,body{
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -43,15 +48,15 @@ h1, h2, h3 {
     color: #000;
 }
 
-main p, main ul {
+p, ul {
     margin: 5px 0;
 }
 
-main ul {
+ul {
     padding-left: 20px;
 }
 
-main li {
+li {
     margin-bottom: 10px;
 }
     .container {
@@ -174,13 +179,32 @@ main li {
         border-radius: 8px;
     }
     </style>
-     
+     <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/Header_folder/nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav-container").innerHTML = data;
+            // Load the nav.js file after the HTML is loaded
+            let script = document.createElement("script");
+            script.src = "/Header_folder/nav.js";
+            document.body.appendChild(script);
+          });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("/Footer_folder/footer.html") // Load the nav.html file
+          .then((response) => response.text()) // Get its content
+          .then((data) => {
+            document.getElementById("footer-container").innerHTML = data; // Insert into the page
+          });
+      });
+    </script> -->
   </head>
   <body>
     <%include ../Header/nav.html%>
+    
     <div id="img">
-        <img src="../images/Life@ITM/Learning.jpg" alt="">
-        <div id="nameDiv">
+        <img src="../images/Life@ITM/Grievance.jpg" alt="">        <div id="nameDiv">
             <h2>Committee Structure</h2>
             <div id="line"></div>
 

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PG Admission Programs</title>
+    <link rel="stylesheet" href="../stylesheets/font.css">
+    <link rel="stylesheet" href="../stylesheets/Admission/admission.css">
+
+
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      
+      main {
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+        padding: 10px;
+      }
+      .panel {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+      .panel.btech {
+        background-color: white;
+      }
+      .panel.barch {
+        background-color: #fffacd;
+      }
+      .panel h2 {
+        margin-top: 0;
+        border-bottom: 2px solid red;
+        padding-bottom: 10px;
+      }
+      .panel ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+      .panel ul li {
+        margin-bottom: 10px;
+      }
+      .container-str {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+        padding: 10px;
+      }
+      .panel {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+      .panel.fee-structure {
+        background-color: #ffcccb;
+      }
+      .panel.notices {
+        background-color: #ffebcd;
+      }
+      .panel h2 {
+        margin-top: 0;
+        border-bottom: 2px dashed #000;
+        padding-bottom: 10px;
+      }
+      .panel ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+      .panel ul li {
+        margin-bottom: 10px;
+      }
+      .contact-details {
+        margin-top: 20px;
+      }
+      .contact-details p {
+        margin: 5px 0;
+      }
+      .zoom-info {
+        margin-top: 20px;
+      }
+    </style>
+   
+  </head>
+  <body>
+    <%include ../Header/nav.html%>
+    <div id="img">
+      <img src="../images/Admission/dunedin-university-of.jpg" alt="">
+      <div id="nameDiv">
+          <h2>Postgraduate Admission Programs</h2>
+          <div id="line"></div>
+
+      </div>
+  </div>
+
+   
+ 
+
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Programs</th>
+            <th>No. of Seats</th>
+            <th>Eligibility</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>M.Tech. (CS)</td>
+            <td>09</td>
+            <td>B.E./B. Tech. in concerned Branch</td>
+            <td>2 Years</td>
+        </tr>
+        <tr>
+            <td>M.Tech. (VLSI)</td>
+            <td>09</td>
+            <td>B.E./B. Tech. in concerned Branch</td>
+            <td>2 Years</td>
+        </tr>
+        <tr>
+            <td>MBA (M, F, HR)</td>
+            <td>120</td>
+            <td>Any Graduate with 50% Marks.</td>
+            <td>2 Years</td>
+        </tr>
+        <tr>
+            <td>MCA</td>
+            <td>60</td>
+            <td>Any Graduate with Mathematics /Physics at 10+2 level.</td>
+            <td>2 Years</td>
+        </tr>
+          <!-- Add more programs as needed -->
+        </tbody>
+      </table>
+    </main>
+    <div class="container">
+      <div class="panel btech">
+        <h2>Admission - Bachelor of Technology (B.Tech)</h2>
+        <ul>
+          <li>Admission Rule Book</li>
+          <li>Schedule</li>
+          <li>Apply Online</li>
+        </ul>
+      </div>
+      <div class="panel barch">
+        <h2>Admission - Bachelor of Architecture (B.Arch)</h2>
+        <ul>
+          <li>Admission Rule Book</li>
+          <li>Schedule</li>
+          <li>Apply Online</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-str">
+      <div class="panel fee-structure">
+        <h2>
+          Fee Structure/Documents required at the time of admission/Hostel
+          Registration
+        </h2>
+        <ul>
+          <li>Academic Fee</li>
+          <li>Hostel and Mess Fee</li>
+          <li>Document required at the time of admission</li>
+          <li>Hostel Registration</li>
+        </ul>
+      </div>
+      <div class="panel notices">
+        <h2>Important Notices</h2>
+        <div class="contact-details">
+          <p>Contact Details:</p>
+          <p>Dr. Manish Dixit - 9343250503</p>
+          <p>Ms. Jyotsna Singh - 9425460166</p>
+        </div>
+        <div class="zoom-info">
+          <p>Admission Enquiry Form</p>
+          <p>
+            Counselling doubt clearing online session time: 12:00 noon daily
+          </p>
+          <p>Zoom Meeting Link</p>
+          <p>Password: 1</p>
+        </div>
+      </div>
+    </div>
+
+
+    <%include ../Footer/footer.html%>
+
+  </body>
+</html>
